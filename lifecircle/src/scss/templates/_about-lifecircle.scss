@@ -1,0 +1,232 @@
+@import "../globals/settings";
+@import "../globals/breakpoint";
+@import "../modules/max-width-container";
+
+.page-template-about-lifecircle {
+
+  .max-width-container {
+    @include max-width-container(#{$max-width * 0.8});
+  }
+
+  .site-content {
+    background-color: $sc-light;
+  }
+
+  .our-patron,
+  .strategic-partners,
+  .board-members,
+  .ceo-section {
+    &__title {
+      font-size: 1.5rem;
+      @include page-title;
+      color: $pc;
+      text-align: center;
+
+      &:after {
+        margin: 1rem auto;
+      }
+    }
+  }
+
+  .our-patron {
+    padding: {
+      bottom: 2rem;
+    }
+    background: white;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .post-content {
+    max-width: 830px;
+    margin: 0 auto;
+  }
+
+  p {
+    font-size: 1.3rem;
+    font-weight: 100;
+
+    a {
+      color: $sc;
+      text-decoration: none;
+    }
+  }
+
+  h2 {
+    @include page-title();
+    color: $pc;
+
+    &:after {
+      margin: 1.5rem auto;
+    }
+  }
+
+  .content-root {
+    width: 100%;
+    max-width: $max-width;
+    padding: 1rem 0;
+  }
+
+  .entry-title {
+    font-size: 1.75rem;
+
+    @include bp-max {
+      font-size: 2rem;
+    }
+  }
+
+  .strategic-partners {
+    background: {
+      color: $sc;
+      image: url('/wp-content/themes/lifecircle/src/images/about-strategic-partners-background.jpg');
+      position: top center;
+      size: cover;
+    };
+
+    &__logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include bp-med {
+        justify-content: space-between;
+      }
+    }
+
+    &__title {
+      color: white;
+    }
+
+    &__logo,
+    .filler {
+      display: inline-block;
+      margin-bottom: 1rem;
+      text-decoration: none;
+      line-height: 0;
+
+      @include bp-med {
+        @include put-in-row(3, 1rem);
+      }
+
+      @include bp-max {
+        @include put-in-row(4, 1rem);
+      }
+
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .ceo-section {
+    background: white;
+
+    .thumbnail-container {
+      max-width: $max-width * 0.6;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+      cursor: pointer;
+
+      .thumbnail {
+        grid-row: 1/2;
+        grid-column: 1/2;
+      }
+
+      &.is-showing-lightbox {
+        &:after {
+          display: none !important;
+        }
+      }
+
+      &:after {
+        pointer-events: none;
+        @include play-button(50px);
+
+        align-self: center;
+        justify-self: center;
+        transform: translate3d(1px, 1px, 1px);
+        grid-row: 1 / 2;
+        grid-column: 1 /2;
+      }
+    }
+
+    &__title {
+      margin-bottom: 2rem;
+    }
+
+    .thumbnail {
+      width: 100%;
+    }
+
+    &__pictures-container {
+      @include bp-med {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &__avatar {
+      width: 100%;
+
+      @include bp-med {
+        margin-right: 2rem;
+        height: auto;
+        width: 34.5%;
+
+        .firefox & {
+          width: 56%;
+        }
+      }
+
+      @include bp-max {
+        width: 335px;
+
+        .firefox & {
+          width: 540px;
+        }
+      }
+    }
+  }
+
+  .corporate-section {
+    .thumbnail-container {
+      position: relative;
+      max-width: $max-width * 0.6;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 100%;
+      cursor: pointer;
+      margin-bottom: 2rem;
+
+      &:not(.is-showing-lightbox) {
+
+        &:after {
+          pointer-events: none;
+          @include play-button(50px);
+
+          align-self: center;
+          justify-self: center;
+          transform: translate3d(1px, 1px, 1px);
+          grid-row: 1 / 2;
+          grid-column: 1 /2;
+        }
+      }
+
+      .thumbnail {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+      }
+    }
+
+
+  }
+
+}

@@ -1,0 +1,238 @@
+/*
+Theme Name:     Blue Platypus Theme
+Theme URI: 	http://blueplatypus.com.au
+Description:    Child theme developed for NIET 
+Author:         Blue Platypus Digital, TWOUDIA (Yannick)
+Theme URI: 	http://blueplatypus.com.au, https://www.twoudia.com/
+Template:       jupiter
+Version:        1.0.7
+
+*/
+
+/*-- TOOLBAR --*/
+.toolbarorange { background: #e66e21 none repeat scroll 0 0; padding: 5px 10px 4px !important;}
+.toolbaryellow { background: #ffbc00 none repeat scroll 0 0; padding: 5px 10px 4px !important; margin-left: 23px !important;}
+.toolbarorange a, .toolbaryellow a {color:#274b89 !important; font-size: 13px !important;}
+.mk-toolbar-holder { float: left; min-width: 95% }
+.mk-header-tagline { font-family: 'Lato'; font-size: 32px; font-weight: 900; color: #ffffff;}
+.mk-toolbar-navigation { float:right;}
+.mk-toolbar-navigation ul li { min-width: 100px; text-align: center;}
+.mk-header-toolbar { display: block !important;}
+.mk-toolbar-resposnive-icon {  display: none !important;}
+
+/*-- COLUMNS --*/
+.five-columns .vc_col-sm-2 {float: left;width: 18.8%; padding: 0;margin-right: 1.5%;min-height: 0;}
+.five-columns .vc_col-sm-2:nth-last-child(2) {margin-right: 0;}
+
+/*-- TABLE --*/
+.niettable table td, .niettable table th { text-align: left; padding: 3px; border:solid 1px #ccc;}
+.niettable th, .niettable th strong {  background: #eeaf18; color: #fff !important;}
+
+/*-- HORIZONTAL RULE --*/
+.niethr { margin-bottom: 40px !important; margin-top: 40px !important;}
+
+/*-- HEADER --*/
+.header-style-1 .mk-header-padding-wrapper, .header-style-2 .mk-header-padding-wrapper, .header-style-3 .mk-header-padding-wrapper {  padding-top: 156px !important;}
+.abovenav { float: right; height: 40px !important; margin-top: 40px; max-width: 450px; margin-right: 15px;}
+.abovenavleft { float: left; width: 50%;}
+.abovenavright { float: right;width: 50%;}
+.add-header-height, .header-style-1 .mk-header-inner .mk-header-search, .header-style-1 .menu-hover-style-1 .main-navigation-ul > li > a, .header-style-1 .menu-hover-style-2 .main-navigation-ul > li > a, .header-style-1 .menu-hover-style-4 .main-navigation-ul > li > a, .header-style-1 .menu-hover-style-5 .main-navigation-ul > li, .header-style-1 .menu-hover-style-3 .main-navigation-ul > li, .header-style-1 .menu-hover-style-5 .main-navigation-ul > li { line-height: 56px;}
+.menu-item-link { height: 50px !important; line-height: 50px !important;}
+#menu-navigation, #menu-new-navigation { float: right;}
+.mk-main-navigation.js-main-nav { width: 100%;}
+.abovenav .mk-svg-icon { fill: #666 !important; margin-left: 5px; margin-right: 5px; margin-top: 6px;}
+.abovenav .search-button { display: none;}
+.abovenav #searchform svg { display: none;}
+.abovenav #searchform .text-input { border: 1px solid #ffd35a; margin-right: 15px; padding-left: 40px; background: rgba(0, 0, 0, 0) url("/wp-content/uploads/2016/11/magnify.png") no-repeat scroll 3% 50%; height: 35px;}
+.header-logo img {top: 45%;}
+#searchform .text-input { text-transform: uppercase;}
+.megamenu-title {  display: none !important;}
+.main-navigation-ul li.menu-item ul.sub-menu li.menu-item a.menu-item-link { text-transform: capitalize;}
+.sub-menu .menu-item-link { height: 18px !important; line-height: 18px !important;}
+.sub-menu .widgettitle { margin-bottom: 0 !important; margin-top: 20px; color: #ffd35a !important;}
+.has-mega-menu > ul.sub-menu > li > ul.sub-menu li.menu-item a.menu-item-link { padding: 5px 10px 5px 25px;}
+.nomobile {display:none;}
+.colourmobile a.menu-item-link { display: block !important; color: #e66e21 !important; font-weight: bold;}
+.nomobile ul li a.menu-item-link { display: block !important; margin-top: 0px !important; padding-top: 0px !important;}
+.has-mega-menu > ul.sub-menu > li > ul.sub-menu li.menu-item a.menu-item-link { padding: 5px 10px 5px 5px;}
+.has-mega-menu > ul.sub-menu > li > ul.sub-menu li.menu-item a.menu-item-link { line-height: 105% !important; margin: 0 0 10px;}
+.sub-menu .widgettitle { margin-top: 0;}
+.megamenu-widgets-container { line-height: 110% !important; padding: 10px 10px 10px 0; }
+#nav.menu-navigation-container .has-mega-menu > ul.sub-menu > li.menu-item-object-custom { display:none; }
+#.sub-menu .menu-item-link { display: none !important;}
+.mk-responsive-nav > li > ul.sub-menu > li.menu-item-has-children > a { display: none !important; }
+
+/*-- ICONS --*/
+.niicons .mk-image-holder {  max-width: 90% !important;}
+.niicons .mk-image-inner  { max-width: 121px !important; margin:auto !important;}
+.niicons .mk-caption-title {  color: #e66e21 !important;  font-size: 24px !important;}
+
+/*-- TYPOGRAPHY --*/
+.master-holder h2 { font-size: 18px !important;}
+.page-title { margin: 20px 20px 5px !important;}
+.page-id-8 h2 { font-family: "amaticscbold" !important; font-size: 60px !important;}
+.mk-image.outside-image .mk-image-caption .mk-caption-title { line-height: 22px;}
+
+/*-- SHOP --*/
+.mk-shop-header { display: none;}
+
+/*-- PRODUCTS --*/
+.courseid {  color: #274b89;  font-size: 20px;}
+.mk-product.style-default .title {  font-size: 26px !important;  margin-bottom: 0 !important;}
+.mk-single-images img, .mk-single-thumbnails img, .mk-woocommerce-main-image img { border: medium none !important;}
+.mk-product-details .meta {display:none;}
+.courseinfo {clear: both;}
+.coursetabs { border: 2px solid #274b89; }
+.peekaboo_link.peekaboo-courseinclusions.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-courseinclusions.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-coursedetails.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-coursedetails.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-entryrequirements.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-entryrequirements.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-computing.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-computing.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-careeroutcomes.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-careeroutcomes.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-benefit.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-benefit.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-open_to.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-open_to.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-niet_courses.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-niet_courses.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-contribution_fees.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-contribution_fees.courseid.peekaboo_onshow, 
+.peekaboo_link.peekaboo-concession_fees.courseid.peekaboo_onhide, .peekaboo_link.peekaboo-concession_fees.courseid.peekaboo_onshow { border-top: 1px solid; border-bottom: 0.5px solid; display: block; padding-bottom: 14px; padding-left: 18px; padding-top: 14px;}
+.coursetab ul, .coursetab ul li { margin-left: 0 !important; padding-left: 0 !important;}
+.courseinclusions, .coursedetails, .entryrequirements, .computing, .careeroutcomes, .benefit, .open_to, .contribution_fees, .concession_fees, .niet_courses { padding: 14px 28px;}
+.courseinclusions li { border-bottom: 0.5px solid #274b89; list-style: outside none none; padding-bottom: 5px; padding-top: 5px;}
+.mk-woo-tabs.wc-tabs-wrapper { display: none;}
+
+.postid-497 .coursetabs { display: none; }
+
+.nietbookingbutton { background: #ffbc00 none repeat scroll 0 0; font-size: 13px; padding: 12px 25px 10px; text-transform: uppercase !important;}
+.nietbookingbuttonwrapper {  margin-bottom: 30px;}
+
+/*-- PRODUCT LISTINGS --*/
+.mk-product-loop.compact-layout .products .item .mk-product-holder, .related.compact-layout .products .item .mk-product-holder, .upsells.compact-layout .products .item .mk-product-holder {  border: medium none !important;}
+.mk-product-loop .mk-price { display: none !important;}
+.product-item-footer {  display: none !important;}
+.archive #theme-page .theme-page-wrapper .theme-content { padding-top: 0 !important;}
+
+.post-type-archive .item-holder img {  border-radius: 250px;}
+.woocommerce .product-category .item-holder, .woocommerce-page .product-category .item-holder {  border: medium none !important;}
+.post-type-archive .item-holder h4 { text-align: center;}
+.post-type-archive article.product-category {padding-top:30px !important;}
+
+.post-type-archive-product .mk-product-loop { display: none;}
+#mk-page-introduce .niettitle .page-title {
+    color: #ffffff !important;
+    font-size: 67px !important;
+    font-weight: 400 !important;
+    letter-spacing: 0 !important;
+    text-transform: uppercase !important;
+}
+#mk-page-introduce .niettitle .page-title { margin: 0px 20px 5px !important;}
+.post-type-archive-product #mk-page-introduce { margin-top: -30px !important;}
+.post-type-archive-product h1.page-title { padding-top: 35px !important;}
+
+.postid-629 .mk-button--dimension-flat.text-color-light { background: #274b89 none repeat scroll 0 0; color: #ffffff; margin-bottom: 20px; margin-top: 20px;}
+.postid-629 .mk-button--dimension-flat.text-color-light:hover { background: #eeaf18 none repeat scroll 0 0;}
+
+/*-- ANGLE ON PRODUCT IMAGES --*/
+.mk-woocommerce-main-image { /*position:relative;*/ background-color:#fff;  border:1px solid transparent; /*display: inline-block;*/}
+/*.mk-woocommerce-main-image img { display:block;}*/
+.mk-woocommerce-main-image:before { position:absolute; left:-1px; top:-1px; content:''; /* border-top: 70px solid silver;  border-right: 70px solid transparent;*/}
+.mk-woocommerce-main-image:after { position:absolute; right:-2px; bottom:-2px; content:'';  border-bottom: 370px solid white; border-left: 70px solid transparent;}
+
+/*-- PRODUCT CIRCLE THUMBNAILS --*/
+/*.product-loop-thumb img { border-radius: 250px !important; height: 250px !important; width: 250px !important; object-fit: cover !important;}*/
+.product-loop-thumb { height: 250px !important; overflow: hidden !important; width: 250px !important; border-radius: 250px !important;}
+.mk-love-holder { display: none !important;}
+h3.product-title, h3.product-title a, .post-type-archive .item-holder h4 {  padding: 0px; text-align: center; color:#274b89 !important; font-size:16px !important; text-transform: none !important; }
+h3.product-title { padding: 15px !important;}
+.mk-shop-item-detail { height: 120px !important;}
+.nietrelated, h4.nietrelated { font-size: 20px !important; text-align: center !important; text-transform: none !important;}
+.product-loop-thumb {
+    margin: auto !important;
+}
+
+
+/*-- FORMS --*/
+.gfield_label {  display: none !important;}
+body .gform_wrapper ul li.gfield { margin: 0;  padding: 0;}
+#gform_1 { background: #274b89 none repeat scroll 0 0 !important; padding: 10px !important;}
+.nidownloadform h3.gform_title { color: #fff !important; font-size:18px !important; padding-left: 70px !important; background: rgba(0, 0, 0, 0) url("/wp-content/uploads/2016/11/download.png") no-repeat scroll left center;}
+.nidownloadform .gform_button.button { background: #ffbc00 none repeat scroll 0 0 !important; color: #274b89 !important; width: 100% !important; font-size:13px !important;}
+.nidownloadform .gform_button.button:hover { background: #e66e21 none repeat scroll 0 0 !important; color: #fff !important;}
+.gform_wrapper { margin: 0 !important;}
+.gform_wrapper .gform_footer {  margin: 0 !important;}
+.gform_wrapper .button {border-radius: 0 !important;}
+/*#gform_2 h4*/ 
+.gform_body h4 { font-size: 20px !important;}
+hr.formhr { margin-bottom: 40px; margin-top: 40px; opacity: 0.25;}
+.gfield_description { color: #999; font-style: italic; padding-left: 15px !important; padding-top: 0 !important;}
+.gform_wrapper input.large {
+    width: 95% !important;
+}
+
+/*-- TESTIMONIALS --*/
+.mk-testimonial-quote { color: #274b89 !important; font-size: 15px !important;}
+.mk-testimonial.simple-style { margin-top: 0 !important; padding: 0 0px !important;}
+.niettestimonialcol {max-width: 960px; margin: auto;}
+
+/*-- CTA --*/
+.ctatext { margin-top: 30px;}
+.ctabutton {  margin-top: 35px;}
+.ctafooter { background: #ffbc00 none repeat scroll 0 0 !important; min-height: 180px !important;}
+.ctafooter h4 {color: #274b89; font-size: 50px; font-weight: 400; text-transform: uppercase;}
+.ctafooter .mk-button { background: #e66e21 none repeat scroll 0 0 !important; color: #fff;
+    padding: 20px 28px;}
+.ctafooter .mk-button:hover { background: #274b89 none repeat scroll 0 0 !important;}
+
+.page-id-621 .ctafooter .full-width-9 {
+    min-height: 0;
+}
+
+/*-- FAQs --*/
+.mk-faq-toggle .mk-toggle-title { font-size: 17px !important;}
+.mk-faq-container.fancy-style-wrapper .mk-toggle-title svg { fill: rgba(39, 75, 137, 0.9) !important;}
+
+/*-- SIDE IMAGES --*/
+.sideimage {max-width:268px;}
+
+/*-- Divider --*/
+.nietbghr {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url("/wp-content/uploads/2016/10/divider.png");
+    background-origin: padding-box;
+    background-position: 0 0;
+    background-size: cover;
+    display: block;
+    height: 5px !important;
+}
+
+/*-- FOOTER --*/
+#mk-footer .widget_nav_menu svg { display: none;}
+#mk-footer .widget {  margin-bottom: 30px;}
+#mk-footer .widget-sub-navigation ul li a, #mk-footer .widget_nav_menu ul li a { padding: 0;}
+#mk-footer [class*="mk-col-"] { padding: 0 1% !important;}
+#mk-footer .footer-wrapper { padding: 0px 0 0;}
+.widget_social_networks a { opacity: 1;}
+.widget_social_networks a:hover { opacity: 0.5;}
+.mk-footer-copyright {	padding: 0 0 20px !important; margin-left: 30px;}
+.mk-footer-below { background: #fff none repeat scroll 0 0; display: block !important; opacity: 1 !important; width: 100% !important;}
+.mk-footer-below-inner { margin: auto;  max-width: 1105px; padding-bottom: 10px; padding-top: 10px; font-family: 'Lato'; font-size: 32px; font-weight: 900; color: #274b89;}
+.mk-footer-below-inner > img { margin-right: 20px;}
+#mk-footer .widget_nav_menu {  padding: 0;}
+.nietaudit {display:none; float: right; margin-left: 10px;}
+.page-id-6 .nietaudit {display:block;}
+.nietaudit > a { color: #fff;}
+
+
+@media screen and (max-width: 639px) {
+	.mk-header-tagline { padding-left: 15%; }
+	.five-columns .vc_col-sm-2 { width: 45%;}
+	.niethr .background-layer.mk-background-stretch.none-blend-effect.js-el { background: rgba(0, 0, 0, 0) none repeat scroll 0 0 !important; border-bottom: 2px solid #eeaf18;}
+	.ctafooter h4 { font-size: 26px;  text-align: center;}
+	.mk-image .mk-image-inner img { margin-top: 20px; width: 70%;}
+	.ctatext { margin-top: 0;}
+	.ctabutton { margin-bottom: 10px; margin-top: 5px;}
+	.page-title {  font-size: 37px;}
+	.product-loop-thumb { text-align: center;}
+}
+@media screen and (max-width: 1023px) {
+	.mk-footer-below-inner { font-size: 0;}
+}

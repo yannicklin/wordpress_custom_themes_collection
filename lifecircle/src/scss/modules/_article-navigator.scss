@@ -1,0 +1,15 @@
+@import "../globals/colors";
+
+.article-navigator {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    color: white;
+    display: inline-block;
+    text-decoration: none;
+    background: $sc;
+    padding: 0.45rem 0.8rem;
+    font-size: 1.2rem;
+  }
+}

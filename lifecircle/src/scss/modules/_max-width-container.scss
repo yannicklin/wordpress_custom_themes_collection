@@ -1,0 +1,17 @@
+@mixin max-width-container($mw : $max-width) {
+  width: 100%;
+  max-width: $mw;
+  padding: 1rem;
+  margin: 0 auto;
+
+  @include bp-med {
+    padding: 2rem;
+  }
+
+  @include bp-max {
+    padding: {
+      left: 0;
+      right: 0;
+    }
+  }
+}

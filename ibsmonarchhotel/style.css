@@ -1,0 +1,87 @@
+/*
+Theme Name: IBS Monarch Hotel
+Template: tracks
+Author: TWOUDIA
+Author URI: http://www.twoudia.com
+Version: 1.0.1451343734
+Updated: 2015-12-29 10:02:14
+*/
+
+@charset "UTF-8";
+
+.entry {
+    padding-top: 2em;
+}
+.site-header {
+    padding-bottom: 1.5em;
+}
+.site-title img {
+    max-width: 25em;
+    max-height: 2.5em;
+}
+.entry-content {
+    margin-bottom: 0;
+}
+.menu-primary-items > li {
+    font-size: 1.5em;
+    line-height: 2;
+}
+.menu-primary-items a {
+    border-bottom: 2px solid #222;
+}
+.menu-primary-items a:hover {
+    border-bottom: 2px solid firebrick;
+}
+.entry-container {
+    padding: 0 5%;
+}
+article a:not(.flex-prev):not(.flex-next):not(.nivo-prevNav):not(.nivo-nextNav) {
+    color: maroon !important;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 1px solid #fff;
+}
+article a:not(.flex-prev):not(.flex-next):not(.nivo-prevNav):not(.nivo-nextNav):hover {
+    border-bottom: 1px solid firebrick;
+}
+article h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+body.home.page .entry-header {
+    display: none;
+}
+body.home.page .entry-content {
+    margin-top: 0;
+}
+input.wpcf7-form-control {
+    min-height: 2.5em !important;
+    padding: 0 0.5em !important;
+}
+.intl-tel-input {
+    width: 100%;
+}
+input.wpcf7-form-control.wpcf7-intl-tel.wpcf7-intl_tel {
+    padding-left: 55px !important;
+}
+.wpcf7-validation-errors {
+    display: none !important;
+}
+
+@media all and (max-width: 37.5em) {
+	.site-title img {
+		max-width: 10em;
+		max-height: 4em;
+	}
+}
+@media all and (max-width: 68.75em) {
+	.site-title img {
+		max-width: 20em;
+		max-height: 2em;
+	}
+}
+@media all and (min-width: 56.25em) {
+	.entry-header h1 {
+    		font-size: 2em;
+	}
+}

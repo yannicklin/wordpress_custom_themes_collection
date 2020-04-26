@@ -1,0 +1,64 @@
+/*
+Theme Name: YannickLin-Blog
+Template: sparkling
+Author: Child Theme Configurator
+Version: 1.0.1552652054
+Updated: 2019-03-18 20:14:13
+*/
+
+.entry-meta {
+    margin-bottom: 10px;
+}
+.post-inner-content {
+    padding: 15px 20px;
+}
+.navbar > .container .navbar-brand {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+.navbar > .container .navbar-brand {
+    font-size: 3rem;
+}
+}
+  
+.navbar-default ul.navbar-nav {
+    margin: 10px;
+}
+.navbar-default .navbar-nav > li > a {
+    line-height: 1.5rem;
+    font-size: 16px;
+}
+header.page-header {
+    padding-bottom: 9px;
+    margin: 20px 0;
+}
+h1.entry-title, h2.entry-title {
+    margin-bottom: 10px;
+}
+.well {
+    padding: 15px;
+}
+#secondary .widget_transposh {
+    color: initial;
+}
+#secondary .widget > h3 {
+    font-size: 700;
+    text-decoration: underline;
+}
+#menu-social li a[href*="weibo.com"] .fa:before, .fa-weibo:before {
+    content: "\f18a";
+}
+#menu-social li a[href*="weibo.com"]:hover {
+    background-color: #1d9d74;
+}
+
+/* ==== Customisations of Plugins ==== */
+/* Plugin: wpDataTables */
+@media (min-width: 768px) {
+.navbar-default .navbar-toggle.waves-effect {
+    display: none;
+}
+}
+
+
+

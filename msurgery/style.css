@@ -1,0 +1,65 @@
+/*
+Theme Name: M Surgery
+Theme URI: https://www.msurgery.com.au/
+Template: astra
+Author: TWOUDIA
+Author URI: https://www.twoudia.com/
+Tags: custom-menu,custom-logo,entertainment,one-column,two-columns,left-sidebar,e-commerce,right-sidebar,custom-colors,editor-style,featured-images,full-width-template,microformats,post-formats,rtl-language-support,theme-options,threaded-comments,translation-ready,blog
+Version: 0.9.0.1587218033
+Updated: 2020-04-18 23:53:53
+
+*/
+
+/*=== General ===*/
+a:hover {
+	text-decoration: underline;
+	text-decoration-color: #349cd8;
+	text-decoration-style: dashed;
+	text-underline-position: under;
+}
+
+
+/*=== Main Menu ===*/
+.main-header-menu .menu-item, .main-header-bar .ast-masthead-custom-menu-items {
+	font-size: 1.5rem;
+	font-family: 'Montserrat',sans-serif;
+}
+.main-header-menu li.current_page_item a {
+	text-decoration: underline;
+	text-decoration-color: #008db7;
+	text-decoration-style: double;
+	text-underline-position: under;
+}
+.main-header-menu li a {
+	padding: 0 1rem;
+}
+.main-header-menu li a:hover {
+	text-decoration: none;
+}
+
+
+/*=== Page Content ===*/
+h1.entry-title {
+	color: #008db7;
+	border-bottom: 5px solid #008db7;
+}
+
+
+/*=== Footer ===*/
+.footer-adv-overlay {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.site-footer .widget h2.widget-title {
+	border-bottom: 2px solid #ffffff;
+}
+.site-footer ul li:before {
+	content: "\2192 \0020";
+}
+.site-footer ul li:hover a {
+	text-decoration-color: #ffffff;
+}
+.ast-footer-overlay {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}

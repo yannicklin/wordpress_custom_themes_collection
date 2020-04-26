@@ -1,0 +1,131 @@
+@import "../modules/max-width-container";
+@import "../globals/colors";
+@import "../globals/breakpoint";
+@import "../globals/bits";
+
+.page-template-information-and-tools {
+
+  $topics-nav-width: 220px;
+
+  .max-width-container {
+    @include max-width-container();
+
+    @include bp-max {
+      padding: {
+        top: 4rem;
+        bottom: 4rem;
+      }
+    }
+  }
+
+  .site-content {
+    background-color: $sc-light;
+  }
+
+  .post-title {
+    font-weight: normal;
+    margin: 0;
+    color: $sc;
+
+    &__current {
+      display: block;
+      font-weight: 200;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      background: currentColor;
+      margin: 2rem 0;
+    }
+  }
+
+  .layout-root {
+    display: flex;
+    flex-direction: column;
+
+    @include bp-med {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      .main-section {
+        margin-left: 4rem;
+        flex-shrink: 1;
+        flex-basis: calc(100% - #{$topics-nav-width} - 4rem);
+      }
+
+      .topics-nav {
+        flex-basis: 220px;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+
+      .useful-tools {
+
+      }
+    }
+
+    @include bp-max {
+      .main-section {
+        flex-basis: 580px;
+      }
+    }
+
+  }
+
+  .articles {
+    @include bp-med {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .article-teaser {
+    margin-bottom: 2rem;
+
+    @include bp-med {
+      @include put-in-row(2, 2rem);
+    }
+  }
+
+  .useful-tools {
+    font-size: 1.15rem;
+
+    @include bp-med {
+      margin-left: calc(#{$topics-nav-width} + 4rem);
+    }
+
+    @include bp-max {
+      margin-top: 150px;
+      margin-left: 4rem;
+    }
+
+    &__title {
+      font-size: inherit;
+      color: $pc;
+      font-weight: normal;
+      text-transform: uppercase;
+      margin-top: 0;
+      margin-bottom: 15px;
+
+      &:after {
+        @include h-line(50px, 5px, $pc);
+        margin: 0.5rem 0 0;
+      }
+    }
+  }
+
+  .useful-tool {
+    display: block;
+    margin-bottom: 0;
+    color: #666666;
+    text-decoration: underline;
+  }
+
+}

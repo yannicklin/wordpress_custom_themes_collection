@@ -1,0 +1,159 @@
+/*
+Theme Name: Cathaya Global
+Theme URI: https://twoudia.com/
+Template: twentyseventeen
+Author: Yannick (TWOUDIA)
+Author URI: https://twoudia.com/
+Description: Child Theme of Twenty Seventeen
+Tags: one-column,two-columns,right-sidebar,flexible-header,accessibility-ready,custom-colors,custom-header,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,post-formats,rtl-language-support,sticky-post,theme-options,threaded-comments,translation-ready
+Version: 1.0.1498893053
+Updated: 2017-07-11 17:10:52
+*/
+
+/* =============================== */
+/* General */
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,500,700);
+
+html, body {
+  font-family: 'Roboto Condensed';
+}
+h1, h2, h3 {
+  font-family: 'Oswald';
+  font-weight: 500;
+}
+/* Header */
+.site-header {
+    background-color: #FBFBFB;
+}
+h1.site-title {
+  font-weight: 400;
+  letter-spacing: 0.6rem;
+}
+.site-branding img.custom-logo {
+	padding-left: 1.5vw;
+}
+.site-branding .site-branding-text{
+  padding-left: 1vw;
+}
+.site-branding .site-branding-text p {
+	font-family: 'Oswald';
+	font-style: italic;
+  padding-left: 0.1rem;
+}
+.main-navigation li {
+  min-width: 6rem;
+  text-transform: uppercase;
+}
+.main-navigation li:hover {
+  background-color: #FC7C7C;
+}
+.main-navigation li:hover a {
+  color: #FBFBFB;
+}
+/* Content */
+.panel-content header.entry-header h2 {
+  display: none;
+}
+.panel-content .widget {
+	padding-bottom: 0px;
+}
+.panel-content #brands-2-row .so-panel {
+	margin-bottom: 0px;
+}
+.textwidget ul li, .textwidget ol li {
+    border-bottom: 2px solid #ddd;
+    border-top: none;
+}
+.textwidget ul li:before {    
+	font-family: 'sow-fontawesome';
+	content: '\f06b';
+	margin: 0 5px 0 -15px;
+}
+/* Contact Form 7 */
+.wpcf7-intl_tel::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #FCA9A9;
+}
+.wpcf7-intl_tel::-moz-placeholder { /* Firefox 19+ */
+  color: #FCA9A9;
+}
+.wpcf7-intl_tel:-ms-input-placeholder { /* IE 10+ */
+  color: #FCA9A9;
+}
+.wpcf7-intl_tel:-moz-placeholder { /* Firefox 18- */
+  color: #FCA9A9;
+}
+input[type="submit"].wpcf7-submit {
+	font-family: 'Oswald';
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  background: #060694;
+}
+input[type="submit"].wpcf7-submit:hover, input[type="submit"].wpcf7-submit:focus{
+	background: #FC7C7C;
+}
+/* Footer */
+footer.site-footer .wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer.site-footer .wrap .widget {
+  padding-bottom: 0;
+}
+footer.site-footer .wrap .widget .footer-widget-text-gap {
+  padding: 15px 0;
+}
+footer.site-footer .site-info a {
+  color: #FC7C7C;
+}
+footer.site-footer .site-info a:hover {
+  color: #F40F0F;
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 #F40F0F;
+}
+
+
+
+/* Device Screen */
+@media screen and ( max-width: 47.9em ) {
+  footer.site-footer .wrap .widget .footer-widget-text-gap {
+  	padding: 5px 0;
+	}
+	.panel-content .wrap {
+  	padding-bottom: 3em;
+  }
+}
+@media screen and ( min-width: 48em ) {
+  .site-branding {
+    padding: 2em 0;
+	}
+  .navigation-top {
+    font-size: 1rem;
+	}
+  .navigation-top .wrap {
+    padding: 0.5em 2em;
+  }
+  .main-navigation a {
+    padding: 0.5em 1em;
+    line-height: 1.1;
+	}
+  .page-one-column .panel-content .wrap {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 1000px;
+	}
+  .page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 1em;
+	}
+  .panel-image {
+    height: 50vh;
+    max-height: 500px;
+	}
+	footer h2.widget-title {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+	}
+	.site-info {
+    	width: 75%;
+	}
+}

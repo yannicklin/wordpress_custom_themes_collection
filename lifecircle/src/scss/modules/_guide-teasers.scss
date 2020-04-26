@@ -1,0 +1,72 @@
+@import "../globals/colors";
+
+.guide-teasers {
+  position: relative;
+
+  &[data-ready=false] {
+    .guide-teaser {
+      display: none;
+    }
+  }
+}
+
+.guide-teaser {
+  text-decoration: none;
+  opacity: 1;
+  transition: opacity 2s;
+  width: 100%;
+  display: block;
+  line-height: 1;
+
+  &:not(.current) {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+  }
+
+  .avatar {
+    width: 100%;
+    height: auto;
+  }
+
+  .cta-text {
+    margin: 0;
+    white-space: nowrap;
+    margin-bottom: 0.5rem;
+  }
+
+  .play-button {
+    float: right;
+    height: 40px;
+  }
+
+  .details-container {
+    display: block;
+    background: white;
+    width: 100%;
+    color: $pc;
+    padding: 1rem;
+  }
+
+  .progression-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    opacity: 0.5;
+    background: $sc;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+
+    &.active {
+      opacity: 1;
+      background: $pc;
+    }
+  }
+}

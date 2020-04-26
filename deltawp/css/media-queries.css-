@@ -1,0 +1,111 @@
+
+
+
+@media screen and (max-width: 640px) {
+	
+	.navbar-toggle{background-color:#eaeaea;margin-top:21px;}
+	.navbar-toggle .icon-bar{background-color:#0193de;}
+	.featured-article{padding-left:15px;}
+	.gallery-img{margin-bottom:15px;}
+	
+	.banner-overlay p{font-size:13px;}
+	.navbar-collapse.in{overflow-y:visible;}
+	#owl-demo .item{background-color:#000;}
+	 .blog-sidebar{padding-right:0px;padding-left:0px;}
+	 .breadcrumb{padding-left:10px;}
+	 .breadcrumb a:first-child{padding-left:0px;}
+	
+	 .searchform{float:none;}
+	 .sidebar{padding-left:0px;}
+	 .main-content{margin-bottom:20px;}
+	 .banner-overlay{height:165px;}
+	 .sidebar-left{padding-right:0px;} 
+	 .event-img img{width:100%;}
+	 .gallery img{width:100%;}
+	
+}
+
+@media (max-width: 767px){
+	
+	.description{position:relative;clear:both;width:100%;}
+	.description h6{padding-top:5px;}
+	.owl-theme .owl-controls{right:0px;}
+	.smooth_slider{padding:0px !important;}
+	.news{margin-top:50px;}
+	
+	#smooth_slider_2{height:225px !important;}
+	.office-info{margin-top:10px;}
+	
+	
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+	.navbar-brand{text-align:center;}
+	.navbar-default .navbar-nav > li > a{padding-left:5px;padding-right:5px;}
+	
+	.header{height:134px;}
+	.featured-article{padding-left:0px;}
+	.description{width:97.3%;}
+	
+	.yamm .dropdown.yamm-fw .dropdown-menu {
+    left: -16px;
+    right: 0;
+    width: 139%;
+	}
+	#owl-demo .item img{height:145px;}
+	.owl-theme .owl-controls{right:0px;}
+	
+	#smooth_slider_2{height:225px !important;}
+	ul.sidebar-menu{padding-left:40px;}
+	ul.sidebar-menu li a{padding:5px 10px 5px 20px;}
+	
+	
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+	.description{width:97%;}
+	
+	.yamm .dropdown.yamm-fw .dropdown-menu {
+    left: -182px;
+    right: 0;
+    width: 154%;
+	}
+	.searchform{float:none;}
+	.solution,.news,.video{border-left:2px solid #eaeaea;}
+	.sidebar{}
+	.blog-sidebar{padding-left:0px;}
+	
+}
+
+@media (min-width: 1200px) {
+	
+	.container {
+   	 width: 1005px;
+  	}
+	
+	.yamm .dropdown.yamm-fw .dropdown-menu{
+		
+		left: -179px;
+    	right: 0;
+    	width: 155%;
+		
+		
+	}
+	
+	
+	#owl-demo .item{
+		
+		width:277px;
+		height:186px;
+
+	}
+	.blog-sidebar{padding-left:0px;}
+	
+	.solution,.news,.video{border-left:2px solid #eaeaea;}
+	.event-img{float:right; margin:0px 0px 15px 15px;}
+	
+	
+}

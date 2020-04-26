@@ -1,0 +1,508 @@
+<?php get_header(); ?>
+
+<?php
+if ( is_front_page()  ) { ?>
+  
+  	
+<section id="slider-banner">
+	<section class="container">
+    	
+		 <?php
+        	echo do_shortcode('[smartslider2 slider="4"]');
+         ?>
+         
+     </section>   
+</section>
+
+
+
+
+<section class="container listing-area bg-white" >
+
+	
+    	<section class="business col-lg-8 col-md-8 col-sm-7  col-xs-12">
+        	<h2>Our Business</h2>
+            <section class="col-lg-4 col-md-4 col-sm-6 col-xs-12 padding-right-off">
+            	<h3>Renewable Energy</h3>
+                <ul>
+                	<li><a href="/">Transformerless</a></li>
+                    <li><a href="/">Transformer Based</a></li>
+                    <li><a href="/">Consumables</a></li>
+                    <li><a href="/">Monitoring & Communication</a></li>
+                    
+                </ul>    
+            
+            </section>
+            <section class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+            
+            	<h3>Industrial Automation</h3>
+                <ul>
+                	<li><a href="/">Factory Automation</a></li>
+                    <li><a href="/">Machine Automation</a></li>
+                    <li><a href="/">Building Automation</a></li>
+                    <li><a href="/">Process Automation</a></li>
+                    
+                </ul> 
+            
+            </section>
+            <section class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            
+            	<h3>Telecom Power Systems</h3>
+                <ul>
+                	<li><a href="/">Cabinets</a></li>
+                    <li><a href="/">Advanced Cooling</a></li>
+                    <li><a href="/">Control & Monitoring</a></li>
+                    <li><a href="/">Chargers</a></li>
+                    
+                </ul> 
+            
+            </section>
+        
+        </section>
+        
+        <section class="col-lg-4 col-md-4 col-sm-5 col-xs-12 solution">
+        	<h2>Solutions</h2>
+            <ul>
+            	<li><a href="/">Renewable Energy Solutions</a></li>
+                <li><a href="/">Industrial Automation Solutions</a></li>
+                <li><a href="/">Telecom Network Energy Solutions</a></li>
+                <li><a href="/">Display & Control Room Solutions</a></li>
+                <li><a href="/">Power Quality Solutions</a></li>
+                <li><a href="/">Data Centre Solutions</a></li>
+                <li><a href="/">EV Charging Solutions</a></li>
+                
+            </ul>
+            
+            
+        
+        </section>
+        
+</section>
+
+<section class="container features bg-white">
+	
+     <?php
+		$catquery = new WP_Query( 'cat=6&posts_per_page=1&order=DESC' );
+		while($catquery->have_posts()) : $catquery->the_post();
+	 ?>
+	<section class="col-lg-2 col-md-2 col-sm-3 featured-article-img">
+        <h2>Features</h2>
+        <?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+        <img class="img-responsive" src="<?php echo $feat_image;?>" alt="" />
+    </section>
+
+	<section class="col-lg-6 col-md-6 col-sm-5 featured-article">
+    	
+        <h4><?php the_title(); ?></h4>
+        <section class="featured-article-content">
+        	<?php //remove_filter ('the_content', 'wpautop'); ?>
+        	<?php the_content(); ?>
+           
+    	</section>
+    </section>
+    <?php endwhile; ?>
+    
+    <section class="col-lg-4 col-md-4 col-sm-4 news">
+    	<!--<h2>News</h2>-->
+        <section class="news-section">
+			<?php
+                echo do_shortcode('[smoothslider id="2"]');
+             ?>
+        </section>
+       <!-- <section class="news-section">
+        <p><span class="date">20/09/2014 -</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. NEW! </p>
+        </section>
+        
+        <section class="news-section">
+        <p><span class="date">20/08/2014 -</span> Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. </p>
+        </section>-->
+    
+    </section>
+
+</section>
+
+
+
+<section class="container gallery-section bg-white">
+	<section class="col-lg-8 col-md-8 col-sm-8 col-xs-12 gallery">
+    		
+    	<h2>Delta CSR</h2>
+       
+    	<section class="gallery-img col-lg-6 col-md-6 col-sm-6 col-xs-6 padding-left-off">
+        	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/gallery-img-1.jpg" alt="" />
+            
+            <section class='description'>  
+            	<h6>Award Winning</h6>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>  
+            </section>
+            
+        </section>
+        
+        <section class="gallery-img col-lg-6 col-md-6 col-sm-6 col-xs-6 padding-left-off">
+        	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/gallery-img-2.jpg" alt="" />
+            <section class='description'>  
+            	<h6>Sustainibility</h6>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>  
+            </section>
+        </section>
+    </section>
+    
+    <section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 video">
+    	<h2>Explore</h2>
+        <section class="video-section col-lg-12">
+        	<a href="#myModal" data-toggle="modal" data-target="#myModal">
+	                <img class="img-responsive center-block"  src="<?php bloginfo('template_url'); ?>/img/video.jpg" alt="" />
+            </a>
+        </section>
+        
+    </section>
+    
+<!---  Video Pop Up Model box Section -->   
+<section class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <section class="modal-dialog">
+    <section class="modal-content">
+      <section class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Explore</h4>
+      </section>
+      <section class="modal-body">
+      <iframe width="560" height="315" src="//www.youtube.com/embed/2bHzZP_6z-A" frameborder="0" allowfullscreen></iframe>
+      <p>Delta ASDA-M servo system provides machinery industries with enhanced competitiveness.</p>
+      </section>
+      
+    </section>
+  </section>
+</section>
+<!---  Video Pop Up Model box Section -->   
+
+
+</section> 
+
+
+
+
+
+</section>
+  
+  
+  
+  
+  
+  
+ <?php 
+//} elseif ( is_front_page() ) {
+  
+//} elseif ( is_home() ) {
+  
+} elseif ( is_page('10') || is_page('14') ||  is_page('22') || is_page('20') || is_page('24') || is_page('18') ||  is_page('16')  ) {?>
+  
+<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+<section class="container top-banner" style="background:url(<?php echo $feat_image;?>);">
+	
+    
+    			<?php
+					$my_postid = 10;//This is page id or post id
+					$post_title = get_the_title($my_postid);
+					$post_link = get_the_permalink($my_postid);
+														
+					
+					$content_post = get_post($my_postid);
+					$content = $content_post->post_content;
+					$content = apply_filters('the_content', $content);
+					$content = str_replace(']]>', ']]&gt;', $content);
+					
+			
+				?>
+             <section class="banner-overlay col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+             
+             		<?php
+						$banner_title=get_post_meta($post->ID,'Banner Title',true);
+						if($banner_title != '') {
+						echo '<h1>'. $banner_title .'</h1>';
+						} else {
+						echo '<h1></h1>';
+						}
+						//echo $content;
+					?>
+                    
+                    <?php
+						$banner_description=get_post_meta($post->ID,'Banner Description',true);
+						if($banner_description != '') {
+						echo '<p>'. $banner_description .'</p>';
+						} else {
+						echo '<p></p>';
+						}
+						//echo $content;
+					?>    
+                        
+                           
+                
+    	
+    		 </section>
+        
+    
+   
+
+
+</section>
+
+<section class="container breadcrumb">  
+			
+			<?php 
+				// if there is a parent, display the link
+					$parent_title = get_the_title( $post->post_parent );
+					if ( $parent_title != the_title( ' ', ' ', false ) ) {
+						echo '<a href="'. get_home_url() .'"><i class="fa fa-home"></i></a><i class="fa fa-chevron-right"></i><a href="' . get_permalink( $post->post_parent ) . '" title="' . $parent_title . '">' . $parent_title . '</a><i class="fa fa-chevron-right"></i> ';
+					} 
+					// then go on to the current page link
+					?>
+					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+				<?php the_title(); ?></a>
+            
+</section>   
+
+<section class="container page-content">
+	<section class="col-lg-8 main-content bg-white">
+    	<section class="title bg-green">
+        	<h2><?php the_title(); ?></h2>
+            
+        </section>
+        <section class="content">
+        	<?php echo the_content(); ?>
+        </section>
+    
+    
+    	<section class="related-category col-lg-12">
+        	<h2>Related Categories</h2>
+            
+            <section class="related-item-list">
+            	<ul class="related-items">
+                
+				<?php
+                        $args=array(
+                        'post_type' => 'page', //selects pages
+                        'post_parent' => '10', //Selects pages with the parent ID of 10
+						'order' => 'ASC'
+						
+                       );
+                     
+                    $my_query = new WP_Query($args);
+                    if( $my_query->have_posts() ) {
+                    while ($my_query->have_posts()) : $my_query->the_post(); ?>
+                    
+                
+                    <li>
+                     <section class="imageHolder">
+                        <?php //$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+            
+                                <a href="<?php the_permalink() ?>">
+                                
+                               		<?php $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+       								<img width="121" height="99" src="<?php  echo $featuredImage; ?> " alt="" />
+                                </a>
+                        </section>
+                         
+                        <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+                       
+                    </li> 
+                    
+                   
+                       
+                <?php
+                    endwhile;
+                    }
+                    ?>
+                </ul>
+          </section>    
+        
+        </section>	
+    
+    </section>
+    
+    <section class="col-lg-4 sidebar">
+    
+    	<section class="contact-us">
+        	<section class="title bg-gray">
+        		<h2>Contact Us</h2>
+            </section>
+            
+            <section class="content">
+            	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/contact-us.jpg" alt="" />
+                <p>Have a question or need any assistance that should be answered by a professional? Contact us, and let our staff help you.</p>
+        		<?php // echo $content; ?>
+                <form>
+                	<select class="form-control">
+                    	<option value="">Select Product</option>
+                    </select>
+                </form>
+       		</section>
+        </section>
+        
+        <section class="inner-video-section">
+        	<section class="title bg-gray">
+        		<h2>Related Videos & Cases</h2>
+                
+            </section>
+            <section class="content">
+                <a href="#myModal" data-toggle="modal" data-target="#myModal">
+	                <img class="img-responsive center-block"  src="<?php bloginfo('template_url'); ?>/img/video.jpg" alt="" />
+                </a>
+            </section>
+        </section>    
+    	
+        
+    </section>
+
+</section>
+
+
+<!---  Video Pop Up Model box Section -->
+<section class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <section class="modal-dialog">
+    <section class="modal-content">
+      <section class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Related Videos & Cases</h4>
+      </section>
+      <section class="modal-body">
+      
+      <iframe width="560" height="315" src="//www.youtube.com/embed/2bHzZP_6z-A" frameborder="0" allowfullscreen></iframe>
+      <p>Delta ASDA-M servo system provides machinery industries with enhanced competitiveness.</p>
+      </section>
+      
+    </section>
+  </section>
+</section>
+<!---  Video Pop Up Model box Section -->     
+  
+<?php  
+}
+
+elseif ( is_page('69') ) {?>
+<section class="container padding-right-off padding-left-off">  
+			<?php $feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+			<section class="top-banner-2 col-lg-6 col-md-6 col-sm-6 col-xs-12" style="background:url(<?php echo $feat_image;?>);">
+            </section>
+	
+    
+				
+             <section class="banner-overlay-2 col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
+             
+             		<h1>About Delta</h1>
+                    <p><?php the_title(); ?></p>
+						
+                           
+                
+    	
+    		 </section>
+        
+    
+   
+
+</section>
+
+<section class="container breadcrumb">  
+			
+			<?php 
+				// if there is a parent, display the link
+					$parent_title = get_the_title( $post->post_parent );
+					if ( $parent_title != the_title( ' ', ' ', false ) ) {
+						echo '<a href="'. get_home_url() .'"><i class="fa fa-home"></i></a><i class="fa fa-chevron-right"></i><a href="' . get_permalink( $post->post_parent ) . '" title="' . $parent_title . '">' . $parent_title . '</a><i class="fa fa-chevron-right"></i> ';
+					} 
+					// then go on to the current page link
+					?>
+					<a href="<?php the_permalink(); ?>" rel="bookmark" title="<?php the_title_attribute(); ?>">
+				<?php the_title(); ?></a>
+            
+</section>   
+
+
+
+
+
+
+
+
+<section class="container page-content">
+
+
+	<section class="col-lg-4 sidebar-left">
+    
+    
+    	<section class="sidebar-menu">
+        	<section class="title bg-gray">
+        		<h2>About Delta</h2>
+                
+            </section>
+            <section class="content">
+            
+               <ul class="sidebar-menu">
+                	<li class="active"><a href="/">Delta Group</a></li>
+                    <li><a href="/">Leadership</a></li>
+                    <li><a href="/">Business</a></li>
+                    <li><a href="/">Global Operation</a></li>
+                    <li><a href="/">Innovation</a></li>
+                    <li><a href="/">Milestones</a></li>
+                    <li><a href="/">Delta Group Links</a></li>
+                    <li><a href="/">CSR</a></li>
+				</ul>
+            </section>
+        </section>
+    
+    
+    
+    
+    
+    
+    	<section class="contact-us">
+        	<section class="title bg-gray">
+        		<h2>Contact Us</h2>
+            </section>
+            
+            <section class="content">
+            	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/contact-us.jpg" alt="" />
+                <p>Have a question or need any assistance that should be answered by a professional? Contact us, and let our staff help you.</p>
+        		<?php // echo $content; ?>
+                <form>
+                	<select class="form-control">
+                    	<option value="">Select Product</option>
+                    </select>
+                </form>
+       		</section>
+        </section>
+        
+            
+    	
+        
+    </section>
+
+
+
+
+
+	<section class="col-lg-8 main-content bg-white">
+    	<section class="title bg-gray">
+        	<h2><?php the_title(); ?></h2>
+            
+        </section>
+        <section class="content">
+        	<?php echo the_content(); ?>
+        </section>
+    
+    
+    		
+    
+    </section>
+
+</section>
+
+
+<?php } else{}
+
+?>
+
+
+
+
+
+<?php get_footer(); ?>

@@ -1,0 +1,175 @@
+/*
+Theme Name: Chinese Learn
+Template: serene
+Author: Yannick Lin
+Version: 2.1.12
+Updated: 2020-04-21 23:18:12
+*/
+
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* === HTML - BODY === */
+body {
+	background: #ffffff url("../../uploads/2014/12/background-20141209-white.jpg") repeat scroll center center;
+}
+html:lang(zh-hant) body, #lang_sel_list {
+	font-family: "Noto Sans TC", "Raleway", Arial, "標楷體", sans-serif;
+	font-size: 1.2rem;
+}
+
+/* === Header & LOGO === */
+#main-header {
+	margin-top: 40px;
+}
+h1#logo {
+	font-size: 2rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+html:lang(zh-TW) h1#logo {
+	font-size: 2rem;
+	letter-spacing: 5px;
+}
+
+/* === CONTENT === */
+#container {
+	background: #ffffff repeat scroll 0% 0%;
+	padding: 10px;
+}
+.post-content .title, .post-content .title a {
+	font-size: 2rem;
+	font-weight: 400 !important;
+}
+.read-more::before {
+	content: "<";
+}
+.read-more::after {
+	content: ">";
+}
+h1#comments, #reply-title {
+	font-size: 1.5rem !important;
+}
+article.post .su-column-inner p:empty {
+	margin: 0;
+}
+article.post ul li ul, .comment-content ul li ul, article.page ul li ul {
+	list-style-type: circle;
+}
+
+/* Schools */
+.lsow-clients .lsow-client img {
+	overflow: hidden;
+	height: 100px;
+	width: auto !important;
+	display: block;
+	margin: 0 auto !important;
+}
+
+/* === Archive === */
+.et-pagination {
+	max-width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* === FOOTER === */
+#main-footer {
+	background: #ffffff repeat scroll 0% 0%;
+	margin: 20px 0px;
+}
+#lang_sel_list {
+	border-color: transparent;
+}
+#lang_sel_list a {
+	font-size: inherit;
+}
+.footer-widget {
+	margin-right: 50px;
+}
+.calendar-archives.calendrier .month.has-posts, .calendar-archives.calendrier .day.has-posts, .calendar-archives.calendrier .month.has-posts a, .calendar-archives.calendrier .day.has-posts a {
+    background-color: #dd9933;
+}
+.calendar-archives.calendrier .calendar-navigation, .calendar-archives.calendrier .calendar-navigation>.menu-container li>a.selected, .calendar-archives.calendrier .calendar-navigation>.menu-container li>a:hover {
+    background-image: -webkit-linear-gradient(top, #dd9933 0%, #dd9933 100%);
+    background-image: -o-linear-gradient(top, #dd9933 0%, #dd9933 100%);
+    background-image: linear-gradient(to bottom, #dd9933 0%, #dd9933 100%);
+}
+.footer-widget .calendar-archives.calendrier .calendar-navigation>.menu-container li:before, #mobile_menu ul .calendar-archives.calendrier .calendar-navigation>.menu-container li:before {
+	content: none;
+}
+
+
+
+/* === RESPONSIVE SCREEN === */
+@media only screen and ( max-width: 479px ) {
+	#container {
+		padding: 5px;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 89.9%;
+	}
+	.post-content .title, .post-content .title a {
+		font-size: 1.5rem;
+	}
+	#footer-widgets {
+		display: inherit;
+		padding: 20px 20px 0;
+	}
+	.footer-widget, .f_widget {
+		margin: 0 0 10px 0;	
+	}
+	.footer-widget:first-child, .footer-widget:last-child {
+		display: none;
+	}
+	.footer-widget li {
+		margin: 10px 0;
+	}
+}
+
+@media only screen and ( min-width: 480px ) and ( max-width: 767px ) {
+	#container {
+		padding: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 89.9%;
+	}
+	.post-content .title, .post-content .title a {
+		font-size: 1.7rem;
+	}
+	#footer-widgets {
+		display: inherit;
+		padding: 33px 40px 0;
+	}
+	.footer-widget, .f_widget {
+		margin: 0 0 20px 0;
+	}
+	.footer-widget:first-child, .footer-widget:last-child {
+		display: none;
+	}
+	.footer-widget li {
+		margin: 10px 0;
+	}
+	body.single .post-content, body.page .post-content {
+    		padding-bottom: 50px;
+	}
+}
+
+@media only screen and ( min-width: 768px ) and ( max-width: 960px ) {
+	#container {
+		padding: 15px;
+		margin-left: 7%;
+		margin-right: 7%;
+		width: 85.9%;
+	}
+	#footer-widgets {
+		display: inherit;
+		padding: 20px 20px 0;
+	}
+	.footer-widget:last-child {
+		display: none;
+	}
+	body.single .post-content, body.page .post-content {
+    		padding-bottom: 70px;
+	}
+}

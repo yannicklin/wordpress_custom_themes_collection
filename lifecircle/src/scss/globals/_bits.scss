@@ -1,0 +1,45 @@
+@mixin play-button($size: 50px) {
+  content: '';
+  display: inline-block;
+  background-image: url('/wp-content/themes/lifecircle/src/images/play-video-icon.png');
+  background-size: contain;
+  background-position: center;
+  width: $size;
+  height: $size;
+}
+
+@mixin h-line($width: 100px, $height: 5px, $color: white) {
+  content: '';
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $color;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+@mixin put-in-row($items-per-row: 2, $space-between: 1rem) {
+  width: calc(
+      #{100% / $items-per-row} - (
+        (
+          #{$space-between} /
+          #{$items-per-row}
+        ) *
+        #{$items-per-row - 1}
+      )
+  );
+}
+
+
+@mixin page-title() {
+  font-weight: normal;
+  margin: 0;
+  color: $sc;
+
+  &:after {
+    @include h-line(100px, 5px, currentColor);
+    margin: 1.5rem 0;
+  }
+}

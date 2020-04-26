@@ -1,0 +1,230 @@
+<?php get_header(); ?>
+<section class="container padding-right-off padding-left-off">  
+			
+			<section class="top-banner-2 col-lg-8 col-md-6 col-sm-6 col-xs-12" style="background:url(<?php bloginfo('template_url'); ?>/img/header_img.jpg);">
+            </section>
+	
+    
+				
+             <section class="banner-overlay-2 col-lg-4 col-md-6 col-sm-6 hidden-xs"> 
+             	<section class="banner-overlay-2-content col-lg-10 col-md-10 col-sm-10  hidden-xs">
+             		 <h1>Our Products</h1>
+                     <p>Fill the form below to send an Enquiry about products</p>
+                
+                </section>    
+						
+                           
+                
+    	
+    		 </section>
+        
+    
+   
+
+</section>
+
+<?php
+
+$category = $_GET['category'];
+
+?>
+
+<section class="container breadcrumb">  
+			
+			
+            
+</section>   
+
+<section class="container page-content">
+	<section class="col-lg-8 col-md-8 col-sm-8 col-xs-12 main-content bg-white">
+    	<section class="title bg-blue">
+        	<h2><?php the_title(); ?></h2>
+        </section>
+        <section class="content single-product-page">
+        	
+        	<?php content_product_adder(); ?>
+            
+            <a class="enquire-button  btn btn-primary" href="#myModal" data-target="#enquire" data-toggle="modal">Enquire Now </a>
+            <a class="back-button btn btn-primary" href="javascript:history.go(-1)" onMouseOver="self.status=document.referrer;return true">Back To Products List</a>
+            
+        </section>
+    
+    	
+    
+    </section>
+    
+    <section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 sidebar">
+    
+    	<section class="contact-us sidebar-form">
+        	<section class="title bg-gray">
+        		<h2>Contact Us</h2>
+            </section>
+            
+            <section class="content">
+            	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/contact-us.jpg" alt="" />
+                <p>Have a question or need any assistance that should be answered by a professional? Contact us, and let our staff help you.</p>
+        		
+               <?php
+						require('sidebar-contact-us-form.php');
+				?> 
+       		</section>
+        </section>
+        
+        <section class="inner-video-section">
+        	<section class="title bg-gray">
+        		<h2>Related Videos & Cases</h2>
+                
+            </section>
+            <section class="content">
+                <a href="#myModal" data-toggle="modal" data-target="#myModal">
+	                <img class="img-responsive center-block"  src="<?php bloginfo('template_url'); ?>/img/video.jpg" alt="" />
+                </a>
+            </section>
+        </section>    
+    	
+        
+    </section>
+
+</section>
+
+
+<!---  Video Pop Up Model box Section -->
+<section class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <section class="modal-dialog">
+    <section class="modal-content">
+      <section class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Related Videos & Cases</h4>
+      </section>
+      <section class="modal-body">
+      
+      <iframe width="560" height="315" src="//www.youtube.com/embed/2bHzZP_6z-A" frameborder="0" allowfullscreen></iframe>
+      <p>Delta ASDA-M servo system provides machinery industries with enhanced competitiveness.</p>
+      </section>
+      
+    </section>
+  </section>
+</section>
+<!---  Video Pop Up Model box Section -->  
+
+<section class="modal fade" id="enquire" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <section class="modal-dialog">
+    <section class="modal-content">
+      <section class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Enquire Now</h4>
+      </section>
+      <section class="modal-body">
+      
+      
+      <script type="text/javascript" src="http://vemail.digitalglare.com/download/scripts/5.8.40/js/third_party/jquery/jquery.js" /></script>
+        <script type="text/javascript" src="http://vemail.digitalglare.com/download/scripts/5.8.40/js/webform_validation.js" /></script>
+        <script type="text/javascript" src="http://vemail.digitalglare.com/download/scripts/5.8.40/js/quickform.js" /></script>
+        <script type="text/javascript" src="http://vemail.digitalglare.com/download/scripts/5.8.40/js/third_party/jquery/plugins/uploadify/swfobject.js" /></script>
+        <script type="text/javascript" src="http://vemail.digitalglare.com/download/scripts/5.8.40/js/third_party/jquery/plugins/uploadify/jquery.uploadify.v2.1.4.min.js" /></script>
+        <script type="text/javascript">
+            var _e_r = new RegExp("^(?:[\\#\\$\\&'\\*\\+\\-\\/\\=\\?\\^\\_\\`\\{\\}\\|\\~a-zA-Z0-9-]+(?:\\.[\\#\\$\\&'\\*\\+\\-\\/\\=\\?\\^\\_\\`\\{\\}\\|\\~a-zA-Z0-9-]+)*@[a-zA-Z0-9-]{1,63}(?:\\.[a-zA-Z0-9-]{1,63})*\\.[a-zA-Z][a-zA-Z0-9-]{1,62})?$");
+            function validateEmail(addr) {
+                return _e_r.test(addr) && (addr == "" || addr.indexOf("@") < 65);
+            }
+
+            var fix_form_width = false;
+        </script>
+      
+ 
+       <form method="POST" data-is-embed="" data-account-id="49662" data-webform-id="144173" class="em_wfe_form form-horizontal" id="em_subscribe_form" name="em_subscribe_form" onsubmit="return checkForm(this);" action="http://vemail.digitalglare.com/em/forms/subscribe.php?db=432530&amp;s=144173&amp;a=49662&amp;k=ff8f02e&amp;wt=1" enctype="multipart/form-data">
+            <input type="hidden" name="webform_submit_catch" value="em_subscribe_form" />
+            <input type="hidden" name="sf_catch" value="em_subscribe_form" />
+      
+      	 <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Product name* </label>
+      		<section class="col-sm-9">
+                        <!--<input type="text" class="form-control"  placeholder="<?php //the_title(); ?>" value="<?php //the_title(); ?>" disabled="disabled">-->
+                        <?php //$productname = get_the_title(); ?>
+                        <?php //echo get_the_title(); ?>
+                       
+                        
+                        
+                        <input type="text" value="<?php echo get_the_title(); ?>" id="em_wfs_formfield_3425668" name="em_wfs_formfield_3425668" mandatory="true" validation="" sf_title="Product Name" ftype="1" maxlength=80 size=0 class="form-control" readonly="readonly" />
+
+		
+                        
+                        
+            </section>
+         </section>   
+         
+         
+         <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Category Name* </label>
+      		<section class="col-sm-9">
+            
+                       <!-- <input type="text" class="form-control"  placeholder="Your name">-->
+                        <input type="text" value="<?php echo ltrim($category)  ?>" id="em_wfs_formfield_3511234" name="em_wfs_formfield_3511234" mandatory="true" validation="" sf_title="Category Name" ftype="1" maxlength=80 size=0 class="form-control" placeholder="Category Name" readonly="readonly" />
+                        
+                         
+                        
+            </section>
+         </section>
+         
+          
+         
+         <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Your name* </label>
+      		<section class="col-sm-9">
+            
+                       <!-- <input type="text" class="form-control"  placeholder="Your name">-->
+                        <input type="text" value="" id="em_wfs_formfield_3425669" name="em_wfs_formfield_3425669" mandatory="true" validation="" sf_title="Your Name" ftype="1" maxlength=80 size=0 class="form-control" placeholder="Your name"  />
+                        
+            </section>
+         </section> 
+         
+         <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Phone* </label>
+      		<section class="col-sm-9">
+            			<input class="form-control" type="text" value="" id="em_wfs_formfield_3425672" name="em_wfs_formfield_3425672" mandatory="true" validation="11" sf_title="Phone" ftype="1" maxlength=80 size=0  placeholder="Phone"  />
+                        
+                       <!-- <input type="text" class="form-control"  placeholder="Phone">-->
+            </section>
+         </section> 
+         
+         <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Email* </label>
+      		<section class="col-sm-9">
+                        <!--<input type="text" class="form-control"  placeholder="Email">-->
+                        <input class="form-control" type="text" value="" id="em_wfs_formfield_3425671" name="em_wfs_formfield_3425671" mandatory="true" validation="1" sf_title="Email" ftype="1" maxlength=80 size=30  placeholder="Email" />
+            </section>
+         </section>  
+         
+          <section class="form-group">
+      		<label for="text" class="col-sm-3 control-label">Enquiry* </label>
+      		<section class="col-sm-9">
+                       <!--<textarea class="form-control" rows="3" placeholder="Enquiry"></textarea>-->
+                       <textarea id="em_wfs_formfield_3425674" name="em_wfs_formfield_3425674" mandatory="true" sf_title="Enquiry Details" ftype="9" cols=0, rows=4 placeholder="Enquiry" class="form-control"></textarea>
+            </section>
+         </section>  
+         
+         <section class="form-group">
+              <section class="col-sm-offset-2 col-sm-10">
+           		<!--<input class="wfe_button btn btn-default" type="submit" title="Submit" value="Submit" /> --> 
+                <input class="wfe_button wfe_button btn btn-default" type="submit" title="Submit" value="Submit" />
+              </section>
+          </section>           
+      
+      </form>
+      
+      
+      
+      <!-- <p>Enquiry Form </p>-->
+      </section>
+      
+    </section>
+  </section>
+</section>
+
+
+
+
+
+
+   
+<?php get_footer(); ?> 

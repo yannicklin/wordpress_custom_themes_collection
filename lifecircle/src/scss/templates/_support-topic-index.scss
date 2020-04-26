@@ -1,0 +1,138 @@
+@import "../modules/max-width-container";
+@import "../globals/colors";
+@import "../globals/breakpoint";
+
+.page-template-support-topics-index {
+  .max-width-container {
+    @include max-width-container();
+
+    @include bp-max {
+      padding: {
+        top: 4rem;
+        bottom: 4rem;
+      }
+    }
+  }
+
+  .site-content {
+
+    background: {
+      color: $sc-light;
+      image: url('/wp-content/themes/lifecircle/src/images/topics-index-background.jpg');
+      size: cover;
+      position: center;
+      repeat: no-repeat;
+    };
+  }
+
+  .layout-root {
+    display: flex;
+    flex-direction: column;
+
+    @include bp-med {
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .support-topic-index-item,
+    .support-link {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+
+      @include bp-med {
+        width: calc(50% - (1rem / 2));
+        min-height: 250px;
+      }
+
+      @include bp-max {
+        width: calc(25% - ((1rem / 4) * 3));
+        padding: 1.5rem;
+      }
+    }
+  }
+
+  .support-link {
+    background: #27C5B5;
+    display: flex;
+    color: white;
+    text-decoration: none;
+    align-items: center;
+    flex-direction: column;
+
+    &__icon {
+      width: 90px;
+    }
+
+    &__text {
+      font-size: 1.1rem;
+      max-width: 80%;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+
+      &:before {
+        content: '';
+        display: block;
+        width: 50px;
+        height: 5px;
+        background: white;
+        margin: 7px auto;
+      }
+    }
+  }
+
+  @include bp-max {
+    .support-topic-index-item {
+      &:not(:hover) {
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.support-topic-index-item {
+
+  $ctx: &;
+
+  color: $sc;
+  text-decoration: none;
+  background: white;
+  border-bottom: 5px solid $sc;
+
+  &:hover {
+    color: $pc;
+    border-bottom-color: $pc;
+  }
+
+  @include bp-max {
+    &:not(:hover) {
+      #{$ctx}__excerpt {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin: 0;
+    line-height: 1.1;
+
+    @include bp-med {
+      font-size: 2rem;
+    }
+  }
+
+  &__excerpt {
+    margin: 1rem 0 0;
+    color: #666;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

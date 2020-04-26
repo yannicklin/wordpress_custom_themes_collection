@@ -1,0 +1,42 @@
+@import "../globals/settings";
+@import "../globals/breakpoint";
+@import "../modules/max-width-container";
+
+.page-template-page {
+
+  .max-width-container {
+    @include max-width-container();
+  }
+
+  .site-content {
+    background-color: $sc-light;
+
+    p {
+      font-size: 20.8px;
+    }
+  }
+
+  .post-title {
+    @include page-title();
+  }
+
+  h2 {
+    @include page-title();
+    color: $pc;
+  }
+
+  .content-root {
+    width: 100%;
+    max-width: $max-width;
+    padding: 1rem 0;
+  }
+
+  .entry-title {
+    font-size: 1.75rem;
+
+    @include bp-max {
+      font-size: 2rem;
+    }
+  }
+
+}

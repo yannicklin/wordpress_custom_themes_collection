@@ -1,0 +1,52 @@
+#youtube-player-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .dismiss-button {
+    position: absolute;
+    top: 2vmin;
+    right: 2vmin;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: none;
+    color: white;
+    font: inherit;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 0 8px 0 8px;
+    z-index: 3;
+
+    &:hover {
+      background: white;
+      color: black;
+    }
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.2);
+  }
+}
+
+#player-root {
+  position: absolute;
+  top: 2vmin;
+  left: 2vmin;
+  bottom: 2vmin;
+  right: 2vmin;
+  width: calc(100% - 4vmin);
+  height: calc(100% - 4vmin);
+  z-index: 2;
+  border-radius: 8px;
+}

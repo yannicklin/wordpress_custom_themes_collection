@@ -1,0 +1,335 @@
+@import "../globals/colors";
+@import "../globals/settings";
+@import "../globals/hacks";
+@import "../globals/breakpoint";
+@import "../globals/bits";
+
+.page.home {
+
+  .need-to-talk {
+    $section-spacing: 1rem;
+    $guide-picture-side-length: 120px;
+
+    background: $sc;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    .max-width-container {
+      width: 100%;
+      max-width: $max-width;
+      margin: 0 auto;
+    }
+
+    .layout-root {
+      padding: $section-spacing;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include bp-med {
+        justify-content: flex-end;
+        padding: {
+          top: 0;
+          bottom: 0;
+        }
+      }
+
+      @include bp-max {
+        padding: {
+          left: 0;
+          right: 0;
+        }
+      }
+    }
+
+    a {
+      color: white;
+    }
+
+    .prompt-text {
+      @include bp-med {
+        width: calc(100% - #{$guide-picture-side-length});
+        text-align: right;
+      }
+    }
+
+    .guide-picture-link {
+      display: inline-block;
+      margin-left: 10%;
+
+      @include bp-med {
+        margin-left: 0;
+      }
+    }
+
+    .guide-picture {
+      height: auto;
+      flex-shrink: 0;
+      border-radius: 50%;
+      max-width: $guide-picture-side-length;
+
+      @include bp-med {
+        /**
+         * Make this image pop-out of the top of the section,
+         * bottom-aligned to the center of the text
+         */
+        margin-top: calc(
+          (
+            #{$section-spacing} /* the top padding */
+            + #{$guide-picture-side-length} /* the size of the picture */
+            - 2em /* bottom of the text */
+          ) * -1 /* make it negative */
+        );
+      }
+    }
+  }
+
+  .content-body {
+    width: 100%;
+    max-width: 875px;
+    margin: 0 auto;
+    padding: 1rem;
+    font-size: 1.333rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    color: $pc;
+    font-weight: 200;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      background: $pc;
+      margin: 1rem auto;
+    }
+
+    @include bp-med {
+      font-size: 2rem;
+    }
+  }
+
+  .intro {
+    background-image: url('/wp-content/themes/lifecircle/src/images/front-page-intro-background.jpg');
+    //height: 320px;
+    background: {
+      position: center;
+      repeat: no-repeat;
+      size: cover;
+    }
+
+    @include bp-med {
+      height: 500px;
+    }
+
+    @include bp-max {
+      height: 640px;
+    }
+
+    .welcome-message {
+      color: white;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+
+      padding: 2rem;
+
+      @include bp-max {
+        padding: 0;
+      }
+    }
+
+    .title {
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: -3px;
+      font-size: 2.5rem;
+
+      @include bp-med {
+        font-size: 3.75rem;
+      }
+
+      @include bp-max {
+        font-size: 5rem;
+      }
+    }
+
+    .tagline {
+      max-width: 470px;
+      font-weight: 300;
+      font-size: 1.333rem;
+
+      @include bp-med {
+        font-size: 1.666rem;
+      }
+
+      @include bp-max {
+        font-size: 2rem;
+      }
+    }
+
+    .explainer-teaser {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      border: none;
+      background: none;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      font: inherit;
+      cursor: pointer;
+      color: inherit;
+
+      &:hover {
+        .icon {
+          transform: scale(1.1);
+        }
+      }
+
+      &:active {
+        .icon {
+          transform: scale(0.9);
+        }
+      }
+
+      .icon {
+        transition: transform 0.1s ease;
+        width: 50px;
+        height: auto;
+
+        @include bp-med {
+          width: 70px;
+        }
+      }
+
+      .text {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .carer-stories {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include bp-max {
+      font-size: 1.2rem;
+    }
+
+    @include ie-only {
+      margin-bottom: -134px;
+    }
+
+    a {
+      color: $pc;
+    }
+
+    .max-width-container {
+      width: 100%;
+      max-width: $max-width;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .slide {
+      display: flex;
+      flex-direction: column;
+      opacity: 1;
+      transition: opacity 2s;
+
+      @include bp-med {
+        flex-direction: row;
+      }
+
+      &:not(.current) {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+      }
+
+      &:not(.is-showing-lightbox) {
+        .thumbnail-container {
+          &:after {
+            pointer-events: none;
+            @include play-button(50px);
+
+            align-self: center;
+            justify-self: center;
+            transform: translate3d(1px, 1px, 1px);
+            grid-row: 1 / 2;
+            grid-column: 1 /2;
+          }
+        }
+      }
+    }
+
+    .thumbnail-container {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 100%;
+      cursor: pointer;
+
+      @include bp-med {
+        width: 60%;
+      }
+
+      &:hover {
+        &:after {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .thumbnail {
+      max-width: 100%;
+      position: relative;
+      flex-shrink: 0;
+      flex-grow: 0;
+      grid-row: 1 / 2;
+      grid-column: 1 /2;
+    }
+
+    .meta {
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include bp-med {
+        width: 40%;
+        padding: 2rem;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .story-title {
+      color: $pc;
+      font-weight: 300;
+      margin: 0;
+
+      &:after {
+        content: '';
+        display: block;
+        margin: 1rem 0;
+        height: 5px;
+        background: $pc;
+        width: 4em;
+      }
+    }
+  }
+
+}

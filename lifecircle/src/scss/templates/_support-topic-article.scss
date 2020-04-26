@@ -1,0 +1,67 @@
+@import "../modules/max-width-container";
+@import "../globals/colors";
+@import "../globals/breakpoint";
+@import "../globals/bits";
+
+.page-template-support-topic-article {
+
+  $main-section-width: 580px;
+
+  .max-width-container {
+    @include max-width-container();
+
+    @include bp-max {
+      padding: {
+        top: 4rem;
+        bottom: 4rem;
+      }
+    }
+  }
+
+  .site-content {
+    background-color: $sc-light;
+  }
+
+  .post-title {
+    font-weight: normal;
+    margin: 0;
+    color: $sc;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100px;
+      height: 5px;
+      background: currentColor;
+      margin: 2rem 0;
+    }
+  }
+
+  .post-content {
+    font-size: 20.8px;
+    font-weight: 200;
+  }
+
+  .layout-root {
+    display: flex;
+    flex-direction: column;
+
+    @include bp-med {
+      flex-direction: row;
+
+      .main-section {
+        margin-left: 4rem;
+        flex-shrink: 1;
+        flex-basis: $main-section-width;
+      }
+
+      .topics-nav {
+        flex-basis: 220px;
+        flex-shrink: 0;
+        flex-grow: 0;
+      }
+    }
+
+  }
+
+}

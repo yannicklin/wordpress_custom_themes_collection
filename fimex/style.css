@@ -1,0 +1,358 @@
+/*
+Theme Name: FIMEX
+Theme URI: http://theme.co/x/
+Template: x
+Author: TWOUDIA
+Author URI: https://twoudia.com/
+Description: Modifications
+Version: 1.00.216.69
+Updated: 2020-03-30 13:17:09
+*/
+
+/* === General === */
+@font-face {
+  font-family: 'PumpTriline';
+  src: url('font/pump_triline.eot'); /* IE9 Compat Modes */
+  src: url('font/pump_triline.woff') format('woff'), /* Pretty Modern Browsers */
+       url('font/pump_triline.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('font/pump_triline.svg') format('svg'); /* Legacy iOS */
+}
+body .site {
+    background-image: url(/wp-content/uploads/2019/11/testAsset-2-1.png);
+    background-size: cover;
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+}
+.x-container.offset {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.x-content-band {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.h-custom-headline {
+    margin: 0.5em 0;
+}
+.Hideafter5sec {
+    -moz-animation: cssAnimationHide 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimationHide 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimationHide 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimationHide 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimationHide {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimationHide {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
+.Shownafter5sec {
+	width: 0;
+	height: 0;
+	overflow:hidden;
+	visibility:hidden;
+    -moz-animation: cssAnimationShown 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimationShown 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimationShown 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimationShown 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimationShown {
+    to {
+        width:100%;
+		height: initial;
+        overflow:hidden;
+		visibility:initial;
+    }
+}
+@-webkit-keyframes cssAnimationShown {
+    to {
+        width:100%;
+        visibility:initial;
+    }
+}
+
+
+/* === Logo === */
+.x-brand {
+    margin-top: 12px !important;
+    font-family: "PumpTriline","Helvetica Neue",Helvetica,sans-serif !important;
+    font-weight: 100 !important;
+}
+
+
+/* === NavBar === */
+.x-navbar-wrap .x-navbar, .x-navbar-wrap .x-navbar .sub-menu {
+    background-image: linear-gradient(to right, rgba(34,34,34,1), rgba(68,68,68,1) 50%, rgba(102,102,102,1) 75%, rgba(136,136,136,1) 100%) !important;
+}
+.x-navbar .x-nav-wrap .x-nav > li > a {
+    text-transform: capitalize !important;
+}
+.x-navbar .desktop .x-nav > li > a:not(.x-btn-navbar-woocommerce) {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu {
+	padding: 12px 1rem;
+	font-size: 1rem;
+	max-width: 15rem;
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu li:before,
+.x-navbar-wrap .x-navbar .desktop .sub-menu li:after {
+	opacity: 0;
+ 	height: 0;	
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu li:not(:last-child):after {
+ 	opacity: 1;
+	height: 1px;
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu li > a {
+	white-space: normal;
+	line-height: 1.2;
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu li:first-child > a {
+	padding-top: 0;	
+}
+.x-navbar-wrap .x-navbar .desktop .sub-menu li:last-child > a {
+	padding-bottom: 0;	
+}
+
+
+
+/* === Tabs === */
+.x-nav-tabs {
+    border-width: 0;
+}
+.x-nav-tabs > li.active {
+    border-width: 2px;
+    border: inherit;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+}
+.x-nav-tabs > li > a {
+    font-size: 1em;
+    background-color: #448aff;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    -o-border-radius: 10px 10px 0 0;
+    border-radius: 10px 10px 0 0;
+    color: #ffffff;
+}
+.x-nav-tabs > li > a:hover {
+    background-color: #c5cae9;
+}
+.x-tab-content .x-accordion-heading .x-accordion-toggle {
+	text-transform: uppercase;
+}
+
+
+/* === Area contains Page Title and BreadCrumb === */
+.x-header-landmark {
+	background-color: rgba(255,255,255,.4)!important;
+}
+
+
+/* === BreadCrumb === */
+.x-breadcrumbs-wrap {
+    width: 35%;
+}
+.x-breadcrumbs {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+.x-breadcrumbs a:hover {
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #448aff;
+}
+
+
+/* === Footer === */
+footer a:hover {
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: #448aff;
+}
+footer.x-colophon.top {
+    background-color: rgba(255,255,255,0.6) !important;
+    padding: 2em 0;
+}
+footer.x-colophon.top .widget {
+    margin-top: 1em;
+}
+footer.x-colophon.top .widget ul, footer.x-colophon.top .widget ol {
+    border-top: none;
+}
+footer.x-colophon.top .widget ul li {
+    background-color: transparent;
+}
+footer.x-colophon.top .widget ul li:last-of-type {
+    border-bottom: none;
+}
+footer.x-colophon.top .widget .textwidget ul {
+    list-style: disc;
+}
+footer.x-colophon.top .widget .textwidget ul li {
+    border: none;
+	padding: 0;
+}
+footer.x-colophon.top .widget .textwidget .x-brand {
+    font-size: 7vw;
+}
+footer.x-colophon.bottom {
+    font-size: inherit;
+    background-image: linear-gradient(to right, rgba(136,136,136,1), rgba(102,102,102,1) 50%, rgba(68,68,68,1) 75%, rgba(34,34,34,1) 100%) !important;
+    padding: 1.5em 0;
+}
+footer.x-colophon.bottom .x-colophon-content {
+    margin: 0;
+}
+footer.x-colophon.bottom a {
+    color: #448aff;
+}
+footer.x-colophon.bottom a:hover {
+    color: #c5cae9;
+}
+footer .footer-left {
+    display: inline;
+    float: left;
+}
+footer .footer-right {
+    display: inline;
+    float: right;
+    padding-left: 1.5em;
+}
+
+
+/* === HomePage === */
+body.home .x-anchor-content .x-anchor-text-primary {
+	font-family: "Oswald", sans-serif !important;
+}
+body.home .x-anchor .x-graphic.hexagon {
+	font-size: 60px;
+	border-color: #3f51b5;
+	margin: 0;
+	width: 2em;
+}
+body.home .x-anchor .x-graphic.hexagon::before, body.home .x-anchor .x-graphic.hexagon::after {
+    content: "";
+    display: block;
+    border: 0 solid transparent;
+	border-top-color: transparent;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-left-width: 0px;
+    border-left-width: 1em;
+    border-right-width: 1em;
+}
+body.home .x-anchor .x-graphic.hexagon::before {
+    border-bottom-width: 0.57em;
+    border-bottom-color: inherit;
+}
+body.home .x-anchor .x-graphic.hexagon::after {
+    border-top-width: 0.57em;
+    border-top-color: inherit;
+}
+body.home .x-anchor i.x-graphic-primary.hexagon {
+	display: block;
+	position: relative;
+	width: 2em;
+	height: 1.2em;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 1em !important;
+	line-height: 1.2em;
+	color: #ffffff;
+	background-color: #3f51b5;
+}
+body.home .x-anchor:hover .x-graphic.hexagon {
+    border-color: transparent;
+}
+
+
+/* === Blog === */
+body.blog article header.entry-header .entry-title:before, body.single-post article header.entry-header .entry-title:before {
+    display: none;
+}
+
+
+/* === Contact Map === */
+.x-map .x-map-inner {
+    padding-bottom: 250px;
+    height: 0;
+}
+.x-map .x-map-inner iframe {
+    width: 100%;
+    height: 250px;
+}
+@media only screen and (min-width: 761px) and (max-width: 1200px) {
+  .x-map .x-map-inner {
+    padding-bottom: 300px;
+    height: 0;
+  }
+  .x-map .x-map-inner iframe {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1201px) {
+  .x-map .x-map-inner {
+    padding-bottom: 400px;
+    height: 0;
+  }
+  .x-map .x-map-inner iframe {
+    height: 400px;
+  }
+}
+
+
+/* === Contact Form === */
+.wpcf7 select, .wpcf7 textarea, .wpcf7 input {
+    font-size: 1em;
+    border: 2px solid #b6b6b6;
+}
+.wpcf7 select:focus, .wpcf7 textarea:focus, .wpcf7 input:focus {
+    border-color: #727272;
+}
+.wpcf7 input[type="submit"] {
+    border: 0;
+}
+
+
+/* === WooCommerce === */
+.woocommerce li.product-category a h3 {
+    font-size: 1.5em;
+    line-height: 1.5em;
+    margin: 0;
+}
+.woocommerce .cols-4 li.product-category, .woocommerce.columns-4 li.product-category {
+    width: 22.6% !important;
+    margin: 0 1.6% 2% 0;
+}
+.woocommerce-tabs .x-nav-tabs.top li a {
+    display: none;
+}
+.woocommerce-tabs #tab-description table {
+    border-collapse: initial;
+}
+.woocommerce-tabs #tab-description table th, table td {
+    border: 1px solid #212121;
+}

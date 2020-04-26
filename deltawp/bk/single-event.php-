@@ -1,0 +1,119 @@
+<?php get_header(); ?>
+
+
+
+<section class="container padding-right-off padding-left-off">  
+			
+			<section class="top-banner-2 col-lg-6 col-md-6 col-sm-6 col-xs-12" style="background:url(<?php bloginfo('template_url'); ?>/img/upcoming-events.jpg);">
+            </section>
+	
+    
+				
+             <section class="banner-overlay-2 col-lg-6 col-md-6 col-sm-6 hidden-xs"> 
+             	<section class="banner-overlay-2-content col-lg-6 col-md-6 col-sm-6 hidden-xs">
+                
+                
+                	
+                
+             		<h1>Events & Training</h1>
+                    <p><?php the_title(); ?></p>
+                
+                </section>    
+						
+                           
+                
+    	
+    		 </section>
+        
+    
+   
+
+</section>
+
+<section class="container breadcrumb">  
+			
+			<?php wordpress_breadcrumbs(); ?>
+            		
+                   
+</section>   
+
+
+
+
+
+
+
+
+<section class="container page-content">
+
+
+	<section class="col-lg-4 col-md-4 col-sm-4 col-xs-12 sidebar-left ">
+    
+    
+    	<section class="sidebar-menu">
+        	<section class="title bg-gray">
+        		<h2>News and Events</h2>
+                
+            </section>
+            <section class="content single-event">
+            
+               <ul class="sidebar-menu">
+                	<li><a href="<?php echo site_url(); ?>/news-and-events/">Delta News</a></li>
+                    <li class="active"><a href="<?php echo site_url(); ?>/news-and-events/events-training/">Events & Training</a></li>
+                    <li><a href="<?php echo site_url(); ?>/news-and-events/media-contact/">Media Contact</a></li>
+                 
+				</ul>
+            </section>
+        </section>
+    
+    
+    
+    
+    
+    
+    	<section class="contact-us sidebar-form">
+        	<section class="title bg-gray">
+        		<h2>Contact Us</h2>
+            </section>
+            
+            <section class="content">
+            	<img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/contact-us.jpg" alt="" />
+                <p>Have a question or need any assistance that should be answered by a professional? Contact us, and let our staff help you.</p>
+        		
+               <?php
+						require('sidebar-contact-us-form.php');
+				?> 
+                
+       		</section>
+        </section>
+        
+            
+    	
+        
+    </section>
+
+
+
+
+
+	<section class="col-lg-8 col-md-8 col-sm-8 col-xs-12 main-content bg-white">
+    	<section class="title bg-gray">
+        	<h2><?php the_title(); ?></h2>
+            
+        </section>
+        <section class="content">
+        	<?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+				the_content();
+			endwhile; else: ?>
+				<p>Sorry, no posts matched your criteria.</p>
+			<?php endif; ?>
+        </section>
+    
+    
+    		
+    
+    </section>
+
+</section>
+
+<?php get_footer(); ?> 

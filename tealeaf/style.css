@@ -1,0 +1,326 @@
+/*
+Theme Name: TWOUDIA
+Theme URI: https://www.twoudia.com/
+Template: vantage
+Author: YANNICK (TWOUDIA)
+Author URI: https://www.twoudia.com/
+Tags: one-column,two-columns,left-sidebar,right-sidebar,grid-layout,custom-colors,custom-menu,custom-logo,featured-images,footer-widgets,full-width-template,post-formats,sticky-post,theme-options,threaded-comments,translation-ready,e-commerce
+Version: 0.0.2.1500213053
+Updated: 2017-07-22 21:50:53
+*/
+/* === Fonts === */
+@import url(//fonts.googleapis.com/earlyaccess/cwtexkai.css); 
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/* General */
+q {
+  quotes: '“' '”' '‘' '’'; /* opening followed by closing quote pairs */
+	font-family: "cwTeXKai", "Rufina";
+  font-weight: 700;
+  font-size: 150%;
+  font-style: italic;
+}
+q:before {
+  content: open-quote;
+  margin-right: 1rem;
+}
+q:after {
+  content: close-quote;
+  margin-left: 1rem;
+}
+
+
+/* Header */
+#masthead #header-sidebar {
+  font-family: "Oxygen", "Noto Sans TC";
+  font-size: 150%;
+}
+#masthead #header-sidebar .advert-call {
+  font-size: 125%;
+  font-style: italic;
+  font-weight: bold;
+}
+.main-navigation ul ul a {
+  max-width: 160px;
+}
+.main-navigation [class^="fa fa-"] {
+  margin-right: 5px;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+
+/* Content */
+header.entry-header h1.entry-title {
+ text-decoration: underline;
+ text-decoration: underline double;
+}
+.entry-content a:hover, .widget-area a:hover {
+  border-bottom: 1px solid #BAB176;
+}
+.entry-content .traditional-chinese-writing-vertical {
+	font-family: "cwTeXKai";
+	writing-mode: vertical-rl;
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.entry-content .traditional-chinese-writing-vertical h3.widget-title {
+	font-weight: bold;
+  font-size: 2.5rem;
+  margin-left: 2rem;
+}
+
+
+/* Footer */
+footer#colophon {
+	background: -moz-linear-gradient(top, rgba(105,113,62,0) 0%, rgba(105,113,62,1) 100%);
+	background: -webkit-linear-gradient(top, rgba(105,113,62,0) 0%,rgba(105,113,62,1) 100%);
+	background: linear-gradient(to bottom, rgba(105,113,62,0) 0%,rgba(105,113,62,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0069713e', endColorstr='#69713e',GradientType=0 );
+}
+#footer-widgets .widget .widget-title {
+  font-size: 2rem;
+}
+#footer-widgets .widget q {
+	color: #ffffff;
+}
+#site-info {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+#site-info a:hover {
+  border-bottom: 1px solid #F0E5C9;
+}
+
+
+/* Side Bar */
+.page-template-templatestemplate-full-php #secondary, .page-template-templatestemplate-full-notitle-php #secondary {
+	width: 0;
+  display: none;
+  visibility: hidden;
+}
+
+
+/* No Results (Search or 404 Error) */
+.entry-content .result-page-images {
+  clear: both;
+	margin: 2rem;
+}
+.entry-content .result-page-images img {
+  display: block;
+	margin: 5px auto;
+}
+
+
+/* Contact Form 7 */
+#newsletter-subscribe-form {
+	background: #F0E5C9;
+}
+#newsletter-subscribe-form form *:not(.wpcf7-response-output) {
+  display: inline-block;
+  margin: 0;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+#newsletter-subscribe-form form .wpcf7-response-output {
+  padding: 1rem 2rem;
+	margin: 2rem;
+	position: relative;
+	top: 2rem;
+  font-weight: bold;
+}
+#newsletter-subscribe-form form #newsletter-subscribe-title {
+  font-family: "Rufina";
+  padding-left: 2%;
+	font-size: 3rem;
+  font-style: italic;
+  font-weight: bold;
+  vertical-align: bottom;
+}
+#newsletter-subscribe-form form span.wpcf7-not-valid-tip {
+	display: none;
+}
+#newsletter-subscribe-form form input.wpcf7-submit {
+	font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+#newsletter-subscribe-form form span.mailpoetsignup {
+	display: none;
+}
+#newsletter-subscribe-form form span.ajax-loader {
+	background-size: contain;
+  padding: 5px;
+}
+#newsletter-subscribe-form form .wpcf7-validation-errors, #newsletter-subscribe-form form .wpcf7-mail-sent-ng {
+	border: none;
+  background: red;
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+#newsletter-subscribe-form form .wpcf7-mail-sent-ok {
+	border: none;
+  background: #9BA657;
+  color: #FFFFFF;
+  border-radius: 1rem;
+}
+
+
+/* WP Site Locator */
+.wpsl-search {
+  background: #F0E5C9;
+}
+#wpsl-search-input, .wpsl-dropdown .wpsl-selected-item, .wpsl-dropdown li, .wpsl-selected-item {
+  padding: 4px 12px !important;
+}
+#wpsl-stores .wpsl-store-location a:before {
+  font-family: "FontAwesome";
+  content: "\f19c";
+  margin-right: 0.5rem;
+}
+#wpsl-stores a.wpsl-directions:after {
+  font-family: "FontAwesome";
+  content: "\f124";
+  margin-left: 0.5rem;
+}
+#wpsl-search-btn {
+  padding: 4px 15px !important;
+	background: #574A24 !important;
+  color: #FFFFFF !important;
+}
+
+
+/* WooCommerce */
+.widget_product_categories ul {
+	margin: 0 0 0 1em !important;
+	padding: 0 !important;
+	list-style: none;
+	position:relative;
+}
+.widget_product_categories ul.product-categories:before  {
+	content: "";
+	display: block;
+	width: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid;
+}
+.widget_product_categories ul.children:before  {
+	content: "";
+	display: block;
+	width: 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	border-left: 1px solid;
+}
+.widget_product_categories li.cat-item {
+  margin: 0;
+  padding: 0 1em !important;
+  line-height: 2em;
+  font-weight: bold;
+  position: relative;
+}
+.widget_product_categories li.cat-item:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 0;
+  border-top: 1px solid;
+  margin-top: -1px;
+  position: absolute;
+  top: 1em;
+  left: 0;
+}
+.widget_product_categories ul > li.cat-item:last-child:before {
+  height: auto;
+  top: 1em;
+  bottom: 0;
+  background: #fcfcfc;
+}
+.entry-content ul.product_list_widget {
+	list-style: none;
+	margin-left: 0;
+}  
+.widget.woocommerce ul.product_list_widget li {
+	float: left;
+	margin: 0 2% 2.992em 0;
+  margin-left: 0px;
+	padding: 0;
+	position: relative;
+	width: 22.5% !important;
+	margin-left: 0;
+}
+.widget.woocommerce ul.product_list_widget li a img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 0 1em;
+    box-shadow: none;
+}
+.widget.woocommerce ul.product_list_widget li a span {
+	display: block;
+}
+body.single-product section.related.products {
+  clear: both;
+}
+
+/* === Language (zh-TW) === */
+body:lang(zh-Hant),button:lang(zh-Hant),input:lang(zh-Hant),select:lang(zh-Hant),textarea:lang(zh-Hant), p:lang(zh-Hant) {
+  font-family: "Noto Sans TC", "Oxygen";
+  font-size: 110%;
+	font-weight: 400;
+}
+#masthead .hgroup h1:lang(zh-Hant) {
+  font-family: "cwTeXKai", "Rufina";
+  font-weight: 700;
+  font-size: 6rem;
+  letter-spacing: 2rem;
+}
+h1:lang(zh-Hant),h2:lang(zh-Hant),h3:lang(zh-Hant),h4:lang(zh-Hant),h5:lang(zh-Hant),h6:lang(zh-Hant) {
+ font-family: "cwTeXKai", "Rufina";
+ font-weight: 700; 
+}
+.main-navigation:lang(zh-Hant), .mobile-nav-frame:lang(zh-Hant), .mobile-nav-frame .title h3:lang(zh-Hant) {
+ font-family: "Noto Sans TC", "Oxygen Mono";
+ font-weight: 400;
+}
+q:lang(zh-Hant) {
+  font-family: "Rufina", "cwTeXKai";
+  font-weight: 700; 
+}
+.widget-title:lang(zh-Hant) {
+  font-size: 2.5rem !important;
+}
+.entry-content h1:lang(zh-Hant) {
+  font-size: 2.5em;
+}
+.entry-content h2:lang(zh-Hant) {
+  font-size: 2.2em;
+}
+.entry-content h3:lang(zh-Hant) {
+  font-size: 2em;
+}
+.entry-content h4:lang(zh-Hant) {
+  font-size: 1.8em;
+}
+.entry-content h5:lang(zh-Hant) {
+  font-size: 1.6em;
+}
+.entry-content h6:lang(zh-Hant) {
+  font-size: 1.4em;
+}
+
+
+/* === Mobile Screen === */
+@media only screen and (max-width: 500px) {
+	#newsletter-subscribe-form form *:not(.wpcf7-response-output) {
+  		padding: 1rem 0.5rem;
+    	max-width: 90%;
+	}
+}

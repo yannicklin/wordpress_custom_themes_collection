@@ -1,0 +1,114 @@
+@import "../modules/max-width-container";
+@import "../globals/colors";
+@import "../globals/breakpoint";
+@import "../globals/bits";
+@import "../globals/hacks";
+
+.page-template-contact-us {
+
+  $topics-nav-width: 220px;
+
+  .max-width-container {
+    @include max-width-container();
+  }
+
+  .site-content {
+    background-color: $sc-light;
+  }
+
+  .post-title {
+    @include page-title();
+  }
+
+  p:first-child {
+    margin-top: 0;
+  }
+
+  p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+
+  .content-and-form {
+    @include bp-med {
+      display: flex;
+      justify-content: space-between;
+
+      > * {
+        @include put-in-row(2, 2rem);
+      }
+    }
+  }
+
+  .guides-content-container {
+    @include bp-med {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .guides-blurb-title {
+    @include page-title();
+    color: $pc;
+  }
+
+  .guides-blurb {
+    @include bp-med {
+      width: 50%;
+      margin-right: 2rem;
+    }
+
+    @include bp-max {
+      width: 20%;
+    }
+  }
+
+  .guides-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include bp-med {
+      justify-content: space-between;
+      width: calc(50% - 2rem);
+    }
+
+    @include bp-max {
+      width: calc(80% - 2rem);
+    }
+  }
+
+  .guide-profile {
+    margin: 0 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    text-decoration: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    @include bp-med {
+      margin: 0 0 2rem;
+      @include put-in-row(2, 2rem);
+    }
+
+    @include bp-max {
+      @include put-in-row(3, 2rem);
+      display: inline-block;
+      line-height: 0;
+    }
+
+    .avatar {
+      height: auto;
+      width: 100%;
+    }
+
+    &__name {
+      display: block;
+      background: $pc;
+      color: white;
+      padding: 0.5rem;
+      line-height: normal;
+    }
+  }
+}

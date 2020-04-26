@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+ <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no' />
+
+ <meta name="format-detection" content="telephone=no">
+
+
+
+    <title><?php if(is_front_page()) { echo "Welcome to Delta Energy Systems"; } else { echo "Delta Electronics -"; wp_title('');  } ?></title>
+
+    <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
+
+   
+
+    
+
+    <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+
+    
+
+	<?php //wp_header();?>
+
+    <?php //wp_footer();?>
+
+    <script type="text/javascript">
+
+   		var site_url = '<?php bloginfo('url'); ?>';
+
+		//alert(site_url);
+
+	</script>
+
+   
+
+ 	<?php wp_head(); ?>
+
+</head>
+
+
+
+
+
+<body>
+
+<section class="wrap">
+
+<header class="navbar" role="navigation">
+
+      <section class="container header">
+
+        <section class="navbar-header col-md-2 col-sm-12 col-lg-2">
+
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+
+            <span class="sr-only">Toggle navigation</span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+            <span class="icon-bar"></span>
+
+          </button>
+
+          
+
+          <a class="navbar-brand col-sm-12" href="<?php echo site_url(); ?>"><img src="<?php bloginfo('template_url'); ?>/img/logo.png" width="129" height="41" /></a>
+
+        </section>
+
+        
+
+        <!--<section class="collapse navbar-collapse col-lg-8 col-md-8 col-sm-8">-->
+
+        
+
+    <!-- Demo navbar -->
+
+    <section class="navbar navbar-default yamm col-lg-8 col-md-8 col-sm-9">
+
+          
+
+          <section class="navbar-collapse collapse" id="mega-menu">
+
+            <ul class="nav navbar-nav">
+
+              <!-- Grid 12 Menu -->
+
+              <!--Aside Menu 
+
+              -->
+
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Solutions<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li class="grid-demo">
+
+                    <section class="row">
+
+                      <section class="col-sm-2 menu-item-green">
+
+                        <h3>Solutions</h3>
+
+                      </section>
+
+                      
+
+                      <section class="col-sm-1">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/renewable-energy-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/renewable-energy.jpg" width="165" height="109" />
+
+                        <h3>Renewable Energy</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/industrial-automation-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/industrial-automation.jpg" width="165" height="109" />
+
+                        <h3>Industrial Automation</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/power-quality-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/power-quality.jpg" width="165" height="109" />
+
+                        <h3>Power Quality</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/telecom-network-energy-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/telecom-network-energy.jpg" width="165" height="109" />
+
+                        <h3>Telecom Network Energy</h3>
+
+                        </a>
+
+                      </section>
+
+                      
+
+                       <section class="col-sm-1">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                    </section>
+
+                    
+
+                    
+
+                    <section class="row">
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                      <section class="col-sm-1">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/display-control-room-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/display-control-room.jpg" width="165" height="109" />
+
+                        <h3>Display & Control Room</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/mission-critical-infrastructure-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/data-center.jpg" width="165" height="109" />
+
+                        <h3>Mission Critical Infrastructure</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                      	<a href="/solutions/ev-charging-solutions/">
+
+                        <img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/electric-vehicle-charging.jpg" width="165" height="109" />
+
+                        <h3>Electric Vehicle Charging</h3>
+
+                        </a>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                       <section class="col-sm-1">
+
+                        <h3></h3>
+
+                      </section>
+
+                      
+
+                    </section>
+
+                    
+
+                    
+
+                    
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+             
+
+              
+
+             
+
+             <?php /*?> <li><a data-scroll href="<?php echo site_url(); ?>/news-and-events/">News & Events</a></li><?php */?>
+              
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#">News & Events<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li class="grid-demo">
+
+                    <section class="row">
+
+                      <section class="col-sm-2 menu-item-green">
+
+                        <h3>News & Events</h3>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      <section class="col-sm-4">
+
+                        <ul class="about-us-menu-items">
+
+                        	<li><a href="/news-and-events/">Delta News</a></li>
+
+                           <!-- <li><a href="/about-delta/australian-operations/">Australian operations</a></li>-->
+
+                            <li><a href="/news-and-events/events-training/">Events & Training</a></li>
+
+                            <li><a href="/news-and-events/media-contact/">Media Contact</a></li>
+
+                            
+
+                        
+
+                        </ul>
+
+                      </section>
+
+                      <section class="col-sm-4"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/newss-menu-img.jpg" width="240" height="152" />
+
+                       
+
+                      </section>
+
+                    </section>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <!--Aside Menu 
+
+              -->
+
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#">About Delta<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li class="grid-demo">
+
+                    <section class="row">
+
+                      <section class="col-sm-2 menu-item-green">
+
+                        <h3>About Us</h3>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      <section class="col-sm-4">
+
+                        <ul class="about-us-menu-items">
+
+                        	<li><a href="/about-delta/overview/">Overview</a></li>
+
+                           <!-- <li><a href="/about-delta/australian-operations/">Australian operations</a></li>-->
+
+                            <li><a href="/about-delta/csr/">CSR</a></li>
+
+                            <li><a href="/about-delta/careers/">Careers</a></li>
+
+                            
+
+                        
+
+                        </ul>
+
+                      </section>
+
+                      <section class="col-sm-4"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/about-us-menu-img.jpg" width="240" height="152" />
+
+                       
+
+                      </section>
+
+                    </section>
+
+                  </li>
+
+                </ul>
+
+              </li>
+              
+              
+              
+
+             
+
+             
+
+              
+
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services & Support<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li class="grid-demo">
+
+                    <section class="row">
+
+                      <section class="col-sm-2 menu-item-green">
+
+                        <h3>Services & Support</h3>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      <section class="col-sm-4">
+
+                        <ul class="about-us-menu-items">
+
+                        	<li><a href="/services-support/how-to-register-a-product/">Product Registration</a></li>
+							<li><a href="/services-support/submit-a-replacement-request/">Replacement Request</a></li>
+                    		<li><a href="/services-support/faq/">FAQs</a></li>
+                        
+
+                        </ul>
+
+                      </section>
+
+                      <section class="col-sm-4"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/Services-and-support-menu-img.jpg" width="240" height="152" />
+
+                       
+
+                      </section>
+
+                    </section>
+
+                  </li>
+
+                </ul>
+
+              </li>
+              
+              
+              <li class="dropdown yamm-fw"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact Us<b class="caret"></b></a>
+
+                <ul class="dropdown-menu">
+
+                  <li class="grid-demo">
+
+                    <section class="row">
+
+                      <section class="col-sm-2 menu-item-green">
+
+                        <h3>Contact Us</h3>
+
+                      </section>
+
+                      <section class="col-sm-2">
+
+                        <h3></h3>
+
+                      </section>
+
+                      <section class="col-sm-4">
+
+                        <ul class="about-us-menu-items">
+
+                        	<li><a href="/contact-us/ausnz-office/">Aust & NZ Offices</a></li>
+
+                    		<li><a href="/contact-us/delta-global-office/">Global Operations</a></li>
+
+                    		
+
+                        
+
+                        </ul>
+
+                      </section>
+
+                      <section class="col-sm-4"><img class="img-responsive" src="<?php bloginfo('template_url'); ?>/img/contact-us-menu-img.jpg" width="240" height="152" />
+
+                       
+
+                      </section>
+
+                    </section>
+
+                  </li>
+
+                </ul>
+
+              </li>
+
+              
+
+              
+
+              <!--<li><a data-scroll href="/services-support/">Services & Support</a></li>-->
+
+              <!--<li><a data-scroll href="/contact-us/ausnz-office/">Contact Us</a></li>-->
+
+             
+
+              
+
+              
+
+            </ul>
+
+          </section>
+
+        </section>
+
+        
+
+        
+
+        
+
+        <section class="search col-lg-2 col-md-2 col-sm-3 hidden-xs">
+
+        
+
+        
+
+       	  
+
+          	<!--<form>	
+
+            
+
+                <input class="form-control" type="text" placeholder="Search" /><input id="search-button" type="button" value="">
+
+                
+
+               
+
+            </form>-->
+
+            
+
+            <form method="get" action="<?php bloginfo('url'); ?>">
+
+                <fieldset>
+
+                    <input class="form-control" type="text" name="s" value="" placeholder="search&hellip;" maxlength="50" required="required" /><input id="search-button" type="submit" value="" />
+
+                </fieldset>
+
+            </form>
+
+          
+
+        </section>
+
+        
+
+      </section>
+
+    </header>
+

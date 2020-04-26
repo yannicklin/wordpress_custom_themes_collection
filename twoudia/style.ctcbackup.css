@@ -1,0 +1,36 @@
+/*
+Theme Name: TWOUDIA
+Theme URI: https://www.twoudia.com/
+Template: bridge
+Author: TWOUDIA STUDIO
+Author URI: https://www.twoudia.com/
+Description: A child theme of Bridge Theme
+Version: 1.0.0.20160519144558
+Updated: 2016-05-19 14:45:58
+*/
+
+@charset "UTF-8";
+/* Footer settings */ 
+footer .footer_top h5 {margin: 10px 0 10px;}
+footer .footer_staff_img {display: block; width: 150px; height: 150px; margin-left: auto; margin-right: auto; border-radius: 50%; background-repeat: no-repeat;-webkit-animation: footer_staffimg 10s infinite; /* Chrome, Safari, Opera */ animation: footer_staffimg 10s infinite;}
+@-webkit-keyframes footer_staffimg { 
+0%   {opacity: 0.5;}
+20%  {opacity: 0.7; background-position: 0 0;}
+40%  {opacity: 1.0; background-position: 0 -150px;}
+60%  {opacity: 1.0; background-position: 0 -150px;}
+80%  {opacity: 0.7; background-position: 0 0;}
+100% {opacity: 0.5;}
+} /* Chrome, Safari, Opera */
+@keyframes footer_staffimg
+{
+0%   {opacity: 0.5;}
+20%  {opacity: 0.7; background-position: 0 0;}
+40%  {opacity: 1.0; background-position: 0 -150px;}
+60%  {opacity: 1.0; background-position: 0 -150px;}
+80%  {opacity: 0.7; background-position: 0 0;}
+100% {opacity: 0.5;}
+}
+footer .three_columns .column_inner {text-align: center;}
+footer .footer_bottom {height: auto;} 
+/* Make the feature images smaller in Activities */ 
+article.activities .post_image {max-height: 350px; overflow: hidden;}

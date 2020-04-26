@@ -1,0 +1,172 @@
+/*
+Theme Name: FIMEX
+Theme URI: http://theme.co/x/
+Author: TWOUDIA
+Author URI: https://twoudia.com/
+Description: Modifications
+Version: 1.00.206
+Template: x
+*/
+
+
+/* ===== Custom Embedded Fonts ===== */
+@font-face{ 
+    font-family: "PumpTriline";
+    src: url('font/pump_triline.eot');
+    src: url('font/pump_triline.eot?#iefix') format('embedded-opentype'),
+        url('font/pump_triline.woff') format('woff'),
+        url('font/pump_triline.ttf') format('truetype'),
+        url('font/pump_triline.svg#webfont') format('svg');
+}
+
+
+/* ===== WHOLE SITE ===== */
+body .site {
+background: #fafafa url(/wp-content/uploads/2019/11/testAsset-2.png) center center no-repeat;
+-webkit-background-size: cover;
+background-size: cover;
+}
+
+
+/* ===== HEADER ===== */
+.x-brand {
+    font-family: "PumpTriline","Helvetica Neue",Helvetica,sans-serif !important;
+    font-weight: 100 !important;
+    margin-top: 12px !important;
+}
+.x-navbar-wrap .x-navbar, .x-navbar-wrap .x-navbar .sub-menu {
+    background: linear-gradient(to right, #222, #444 50%, #666 75%, #888 100%) !important;
+}
+.x-navbar .x-nav-wrap .x-nav > li > a {
+    text-transform: capitalize !important;
+}
+
+/* ====== CONTENT ====== */
+.x-container.offset {
+    margin: 1.5em auto;
+}
+.x-content-band {
+    padding: 0;
+}
+.h-custom-headline {
+    margin: 0.5em 0;
+}
+
+
+/* ====== CONTENT : HEAD ====== */
+.x-breadcrumbs-wrap {
+    width: 35%;
+}
+.x-breadcrumbs {
+    font-size: 0.75em;
+    letter-spacing: 0.5px;
+}
+
+
+/* ====== CONTENT : TABS ====== */
+.x-nav-tabs {
+    border-width: 0;
+}
+.x-nav-tabs > li.active {
+    border: inherit;
+    border-width: 2px;
+    border-radius: 10px 10px 0 0;
+}
+.x-nav-tabs > li > a {
+    font-size: 1em;
+    color: #b6b6b6b;
+    background-color: #448aff;
+    border-radius: 10px 10px 0 0;
+}
+.x-nav-tabs > li > a:hover {
+    background-color: #c5cae9;
+}
+
+
+/* ====== FOOTER ====== */
+footer.x-colophon.top {
+    background-color: #ffffff !important;
+    padding: 2em 0;
+}
+footer.x-colophon.top .widget {
+    margin-top: 1em;
+}
+footer.x-colophon.top .widget ul, footer.x-colophon.top .widget ol {
+    border-top: none;
+}
+footer.x-colophon.top .widget ul li {
+    background: transparent;
+}
+footer.x-colophon.bottom {
+    font-size: inherit;
+    padding: 1.5em 0;
+	background: linear-gradient(to right, #888, #666 50%, #444 75%, #222 100%) !important;
+}
+footer.x-colophon.bottom .x-colophon-content {
+    margin: 0;
+}
+footer.x-colophon.bottom a {
+    color: #448AFF;
+}
+footer.x-colophon.bottom a:hover {
+    color: #C5CAE9;
+}
+footer .footer-left {
+    display: inline;
+    float: left;
+}
+footer .footer-right {
+    display: inline;
+    float: right;
+    padding-left: 1.5em;
+}
+
+
+/* ====== POST/BLOG Display ===== */
+body.blog article header.entry-header .entry-title:before, body.single-post article header.entry-header .entry-title:before {
+    display: none;
+}
+
+
+/* ====== CONTACT FORM 7 ====== */
+.wpcf7 select, .wpcf7 textarea, .wpcf7 input {
+    font-size: 1em;
+    border: 2px solid #b6b6b6;
+}
+.wpcf7 select:focus, .wpcf7 textarea:focus, .wpcf7 input:focus {
+    border-color: #727272;
+}
+.wpcf7 input[type="submit"] {
+    border: 0;
+}
+
+
+/* ====== REAL3D FlipBook ===== */
+.x-tab-content ul li > img[class^='real3dflipbook-']
+{
+    max-width: 24px;
+}
+
+
+/* ====== WOOCOMMERCE : PRODUCT CATEGORY ===== */
+.woocommerce li.product-category a h3 {
+    margin: 0px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.woocommerce .cols-4 li.product-category, .woocommerce.columns-4 li.product-category {
+    width: 22.6% !important;
+    margin: 0 1.6% 2% 0;
+}
+
+
+/* ====== WOOCOMMERCE : PRODUCT ===== */
+.woocommerce-tabs .x-nav-tabs.top li a {
+    display: none;
+}
+.woocommerce-tabs #tab-description table {
+    border-collapse: initial;
+}
+.woocommerce-tabs #tab-description table th, table td {
+    border: 1px solid #212121;
+}

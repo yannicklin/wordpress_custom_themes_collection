@@ -1,0 +1,33 @@
+@import "../globals/colors";
+@import "../globals/bits";
+
+.article-teaser {
+  text-decoration: none;
+  font-size: 1.15rem;
+  display: block;
+
+  &__title {
+    color: $sc;
+    font-size: inherit;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+    &:after {
+      display: block;
+      @include h-line(50px, 5px, $sc);
+      margin: 0.5rem 0 0;
+    }
+  }
+
+  &__excerpt {
+    color: #666666;
+  }
+
+  &__cta {
+    color: $sc;
+    text-decoration: none;
+    margin-bottom: 0;
+  }
+}

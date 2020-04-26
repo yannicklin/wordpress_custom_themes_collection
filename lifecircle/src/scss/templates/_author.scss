@@ -1,0 +1,82 @@
+@import "../modules/max-width-container";
+@import "../globals/colors";
+@import "../globals/breakpoint";
+@import "../globals/bits";
+@import "../globals/hacks";
+
+body.archive.author {
+
+  .max-width-container {
+    @include max-width-container();
+  }
+
+  .site-content {
+    background-color: $sc-light;
+  }
+
+  .post-title {
+    @include page-title();
+
+    @include bp-med {
+      margin-bottom: 3rem;
+    }
+  }
+
+  .layout-root {
+    @include bp-med {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  @include bp-max {
+    .has-video {
+      .main-content {
+        padding-right: 20%;
+      }
+    }
+  }
+
+  .summary-content {
+    @include up-to-bp-med {
+      text-align: center;
+    }
+
+    @include bp-med {
+      width: 30%;
+      margin-right: 2rem;
+    }
+  }
+
+  .main-content {
+    flex-shrink: 1;
+    font-size: 1.3rem;
+
+    @include bp-med {
+      width: calc(70% - 2rem);
+    }
+  }
+
+  .embedded-youtube {
+    margin-bottom: 1rem;
+
+    @include bp-med {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .connect-link {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid $sc;
+    background: white;
+    color: $sc;
+    border-radius: 3px;
+    padding: 0.5rem 1rem;
+
+    @include bp-med {
+      margin-left: 2rem;
+    }
+  }
+
+}

@@ -1,0 +1,46 @@
+.site-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  flex-shrink: 0;
+  flex-grow: 0;
+}
+
+.site-content {
+  flex-grow: 1;
+}
+
+.site-footer {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+body {
+  margin: 0;
+  color: #555;
+}
+
+.visually-hidden { /* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+
+html.ie {
+  body {
+    min-width: $max-width;
+  }
+}
+
+a {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}

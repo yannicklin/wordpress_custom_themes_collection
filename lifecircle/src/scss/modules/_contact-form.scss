@@ -1,0 +1,92 @@
+@import "../globals/colors";
+@import "../globals/hacks";
+
+.wpcf7 {
+
+  p {
+    margin-top: 0;
+  }
+
+  .wpcf7-form-control-wrap {
+
+    &.wraps-select {
+      display: block;
+      padding-top: 1.4rem;
+      background: $sc;
+
+      .wpcf7-form-control.make-space-for-label {
+        padding-top: 0.7rem;
+      }
+    }
+  }
+
+  .wpcf7-form-control {
+    display: block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 0.7rem;
+    line-height: 1;
+    font: inherit;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 0;
+
+    &.make-space-for-label {
+      padding-top: 2.2rem;
+    }
+  }
+
+  [role="alert"] {
+    display: block;
+    font-size: 1rem;
+    padding: 0;
+    border: none;
+    line-height: 1;
+  }
+
+  select {
+    background: white;
+    @include cross-browser-select;
+    padding-right: 27px !important;
+  }
+
+  label {
+    position: relative;
+    display: block;
+  }
+
+  .wraps-select {
+    label {
+      background: $sc;
+    }
+
+    .label-text {
+      color: white;
+    }
+  }
+
+  .label-text {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    font-size: 1rem;
+    color: $sc;
+    padding: 0.7rem;
+  }
+
+  .wpcf7-submit {
+    float: right;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font: inherit;
+    color: white;
+    background: $sc;
+    font-size: 1rem;
+    padding: 0.7rem 1rem;
+    line-height: 1;
+    width: auto;
+  }
+
+
+}
