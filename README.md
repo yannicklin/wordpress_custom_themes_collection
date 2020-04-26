@@ -1,2 +1,2 @@
-# wordpress_custom_themes_collection
+# WordPress Custom Themes Collection
 Customised Themes (for WordPress) Collection
