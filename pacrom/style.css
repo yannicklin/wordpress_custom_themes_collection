@@ -1,0 +1,203 @@
+/*
+Theme Name: PACROM
+Theme URI: https://twoudia.com/
+Template: twentyseventeen
+Author: Yannick (TWOUDIA)
+Author URI: https://twoudia.com/
+Description: Custom child theme with the base of 2017 WP.
+Tags: one-column,two-columns,right-sidebar,flexible-header,accessibility-ready,custom-colors,custom-header,custom-menu,custom-logo,editor-style,featured-images,footer-widgets,post-formats,rtl-language-support,sticky-post,theme-options,threaded-comments,translation-ready
+Version: 1.1.1504660114
+Updated: 2017-09-06 11:08:34
+*/
+
+/* =============================== */
+/* ---- Color Palette ----
+ * dark-white #f6f4f0
+ * cream-green #99bfb5
+ * light-turquoise #64b0a8
+ * turquoise #008d92
+ * dark-turquoise #0a6067
+ */
+
+/* General */
+@import url(https://fonts.googleapis.com/css?family=Chivo);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:700);
+
+html, body {
+  font-family: 'Chivo';
+  background-color: #f6f4f0; /* Dark White */
+}
+h1, h2, h3 {
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+button, input[type="button"], input[type="submit"], .social-navigation a {
+	background-color: #0a6067; /* Dark Turquoise */
+}
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="submit"]:hover, input[type="submit"]:focus, .social-navigation a:hover, .social-navigation a:focus {
+  background: #008d92; /* Turquoise */
+}
+.flex-float-right {
+  justify-content: flex-end;
+}
+
+
+/* Header */
+.site-header {
+  background: inherit;
+}
+h1.site-title {
+  font-family: 'Raleway';
+  font-weight: 700;
+  letter-spacing: 0.5rem;
+}
+.site-branding img.custom-logo {
+	padding-left: 1.5vw;
+  max-height: 100px;
+}
+.site-branding .site-branding-text{
+  padding-left: 1vw;
+}
+.site-branding .site-branding-text p {
+	font-family: 'Montserrat';
+	font-style: italic;
+  padding-left: 0.1rem;
+}
+
+/* Content */
+.site-content-contain {
+  background-color: #f6f4f0; /* Dark White */
+}
+article#post-11 {
+	/* Page: Home section */
+  display: none;
+}
+.panel-content header.entry-header h2 {
+  text-decoration: underline;
+}
+.panel-content .widget {
+	padding-bottom: 0px;
+}
+h2.elementor-heading-title {
+	color: #0a6067;
+}
+.elementor-text-editor p {
+	padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Contact Form 7 
+ *
+ * Directly coded in the section of Contact Us
+ * Only the validation errors would handle here
+ *
+ */
+div.wpcf7-response-output {
+	margin: 1em 2em 2em 0em;
+  padding: 1em;
+  background-color: #008d92; /* Turquoise */
+  color: #f6f4f0; /* Dark White */
+}
+div.wpcf7-validation-errors {
+	border-color: #64b0a8; /* Light Turquoise */
+}
+
+/* Footer */
+footer.site-footer .wrap {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+footer.site-footer .wrap .widget {
+  padding-bottom: 0;
+}
+footer.site-footer .wrap .widget .footer-widget-text-gap {
+  padding: 15px 0;
+}
+footer.site-footer .social-navigation .icon {
+	height: 1.5rem;
+	top: 8px;
+	width: 1.5rem;
+}
+footer.site-footer .social-navigation + .site-info {
+    margin-left: 0;
+}
+footer.site-footer .site-info a {
+  color: #008d92; /* Turquoise */
+}
+footer.site-footer .site-info a:hover {
+  color: #64b0a8; /* Light Turquoise */
+	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 3px 0 #64b0a8;
+}
+
+
+
+/* Device Screen */
+@media screen and ( max-width: 47.9em ) {
+  h1.site-title {
+  	font-size: 2rem;
+	}
+  .site-branding {
+    padding: 2em 0;
+	}
+	.site-branding .site-branding-text p {
+		font-size: 1rem;
+	}
+  footer.site-footer .wrap .widget .footer-widget-text-gap {
+  	padding: 5px 0;
+	}
+	.panel-content .wrap {
+  	padding-bottom: 3em;
+  }
+}
+@media screen and ( min-width: 48em ) {
+  .site-branding {
+    padding: 2em 0;
+	}
+	.site-branding .site-branding-text p {
+		font-size: 1.25rem;
+    word-spacing: 0.3rem;
+	}
+  .page-one-column .panel-content .wrap {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 1000px;
+	}
+  .page.page-one-column .entry-header, .archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: 1em;
+	}
+  .background-fixed .panel-image {
+    background-attachment: local;
+	}
+  .panel-image {
+    height: 40vh;
+    max-height: 400px;
+	}
+	footer h2.widget-title {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+	}
+  footer .site-info {
+    float: initial;
+    padding: 0;
+    width: auto;
+    line-height: 40px;
+    text-align: center;
+  }
+}
+@media screen and ( min-width: 67em ) {
+  h1.site-title {
+    font-size: 2.75rem;
+  }
+  .site-branding .site-branding-text p {
+		font-size: 1.4rem;
+    word-spacing: 0.5rem;
+	}
+  .background-fixed .panel-image {
+    background-attachment: fixed;
+	}
+  .panel-image {
+    height: 50vh;
+    max-height: 500px;
+	}
+}

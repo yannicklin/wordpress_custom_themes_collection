@@ -1,0 +1,382 @@
+/*
+Theme Name: Gymboree
+Template: zakra
+Author: TWOUDIA
+Author URI: https://twoudia.com/
+Tags: one-column,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-logo,featured-images,footer-widgets,full-width-template,theme-options,threaded-comments,translation-ready,blog,news,e-commerce,rtl-language-support
+Version: 1.0.0.1571536447
+Updated: 2019-10-20 11:54:07
+
+*/
+
+.tg-container--separate .tg-site-header {
+    background-color: rgba(255,255,255,0.7) !important;
+}
+.tg-container--separate .tg-page-header {
+    background-color: #ef7421;
+}
+.tg-container--separate #primary {
+    padding-right: 0;
+}
+.tg-container--separate #secondary {
+    padding-left: 0;
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+    min-width: 25vw;
+}
+.tg-primary-menu > div > ul > li {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+}
+.site-branding {
+    max-width: 50%;
+}
+.site-content {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.tg-site-layout--default .hentry {
+    margin-bottom: 0;
+}
+.hentry {
+    margin-bottom: 0;
+}
+.entry-content {
+    margin-bottom: 0;
+}
+.gymboree-padding-20px {
+    padding: 20px;
+}
+.gymboree-button-width-50 a {
+    min-width: 50%;
+}
+.gymboree-button-width-75 a {
+    min-width: 75%;
+}
+.gymboree-button-default a.wp-block-button__link, .gymboree-button-download a {
+    border: 5px solid #ef7421;
+    background-color: #fff;
+    color: #ef7421;
+    text-decoration: none;
+}
+.gymboree-button-default a.wp-block-button__link:hover, .gymboree-button-download a:hover {
+    background-color: #ef7421;
+    color: #fff !important;
+}
+.gymboree-button-default.active a.wp-block-button__link, .gymboree-button-download.active a {
+    background-color: #ef7421;
+    color: #fff !important;
+    cursor: default;
+}
+.gymboree-button-default.reverse a.wp-block-button__link {
+    border: 5px solid #fff;
+    background-color: #ef7421;
+    color: #fff;
+}
+.gymboree-button-default.reverse a.wp-block-button__link:hover {
+    background-color: #fff;
+    color: #ef7421 !important;
+}
+.gymboree-button-default.reverse.active a.wp-block-button__link {
+    background-color: #fff;
+    color: #ef7421 !important;
+}
+.gymboree-button-download a {
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    -moz-border-radius: 28px;
+    -webkit-border-radius: 28px;
+    -o-border-radius: 28px;
+    border-radius: 28px;
+    overflow-wrap: break-word;
+    padding: 12px 24px;
+    margin: 0;
+}
+input::-webkit-input-placeholder {
+    color: #ef7421;
+}
+input:-ms-input-placeholder {
+    color: #ef7421;
+}
+input::placeholder {
+    color: #ef7421;
+}
+.gymboree-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu {
+    border: none;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li {
+    background-color: rgba(243,221,109,0.5);
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li:hover {
+    background-color: rgba(239,116,33,0.5);
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li a {
+    padding: 0.5rem;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li:hover a {
+    color: #fff;
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form * {
+    color: #ef7421;
+    border-color: #ef7421;
+}
+.search-form label:before {
+    color: #ef7421;
+}
+#content .tg-container {
+    background-color: #fff;
+}
+.entry-content .alignfull {
+    margin-left: calc( -95vw / 2 + 100% / 2 );
+    width: 95vw;
+    margin-right: calc( -95vw / 2 + 100% / 2 );
+}
+.entry-content .wp-block-cover {
+    min-height: 430px;
+}
+#primary .post-thumbnail {
+    margin: 1rem auto 2rem;
+}
+footer .frm_form_fields fieldset .frm_description h4 {
+    margin-bottom: 0;
+    margin-top: 20px;
+    color: #fff;
+}
+footer .frm_form_fields fieldset .frm_fields_container {
+    align-items: center;
+}
+footer .frm_form_fields fieldset .frm_fields_container label.frm_primary_label {
+    display: none;
+}
+footer .frm_form_fields fieldset .frm_fields_container .frm_error {
+    color: #fff;
+}
+footer .frm_form_fields fieldset .frm_fields_container .frm_submit::before {
+    display: none !important;
+    padding: 0 !important;
+}
+footer .widget {
+    margin: 0;
+}
+#float-gymboree {
+    top: 50%;
+    width: 6rem;
+    margin-top: -3rem;
+    right: 0;
+    position: fixed;
+}
+#float-gymboree .float-gymboree-label {
+    display: block;
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Barlow Semi Condensed';
+    color: #ef7421;
+    animation: gymboree-text-hue 6s infinite linear;
+    font-variant: small-caps;
+    white-space: nowrap;
+    background-image: -moz-linear-gradient(92deg, #f35626, #feab3a);
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    background-image: -o-linear-gradient(92deg, #f35626, #feab3a);
+    background-image: -ms-linear-gradient(92deg, #f35626, #feab3a);
+    background-image: linear-gradient(-2deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+from {
+    filter: hue-rotate(0deg);
+}
+to {
+    filter: hue-rotate(-360deg);
+}
+#wp-calendar {
+    max-width: 37.5rem;
+    margin-left: auto;
+    width: 100%;
+    margin-right: auto;
+    background-color: #ccc;
+}
+#wp-calendar caption {
+    text-align: center;
+    background-color: #ef7421;
+    color: #fff;
+    padding: 0.25rem;
+}
+#wp-calendar thead tr {
+    border-right: 1px solid #ccc;
+}
+#wp-calendar thead th {
+    font-size: 90%;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ccc;
+    text-transform: uppercase;
+    padding: 0.25rem;
+}
+#wp-calendar tbody td {
+    border: 1px solid #ccc;
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    padding: 0.125rem;
+}
+#wp-calendar tbody td.pad {
+    opacity: 0.7;
+}
+#wp-calendar tbody td#today {
+    font-weight: bold;
+}
+#wp-calendar tbody td#today:after {
+    top: 0;
+    width: 0;
+    right: 0;
+    height: 0;
+    position: absolute;
+    border-left: 10px solid transparent;
+    content: '';
+    border-top: 10px solid #ef7421;
+}
+#wp-calendar tbody td a {
+    display: block;
+    background-color: rgba(232,146,124, 0.2);
+}
+#wp-calendar tbody td a:hover {
+    background-color: rgba(232,146,124, 1);
+    color: #fff;
+}
+#wp-calendar tfoot tr {
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#wp-calendar tfoot tr td {
+    border: 0;
+    padding: 0;
+}
+#wp-calendar tfoot tr a {
+    display: block;
+    padding: 0.25rem 0.75rem;
+}
+#wp-calendar tfoot tr a:hover {
+    background-color: #fff;
+}
+#wp-calendar tfoot tr #prev {
+    text-align: left;
+}
+#wp-calendar tfoot tr #next {
+    text-align: right;
+}
+body.home #content {
+    margin-top: 0;
+}
+body.home #content article.hentry {
+    padding-top: 0;
+}
+body.home #content header.entry-header {
+    display: none;
+}
+.gymboree-hero-video h1 {
+    font-size: 4rem;
+}
+.gymboree-hero-video .gymboree-button-default a, .gymboree-hero-image .gymboree-button-default a {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 2rem;
+    line-height: 1.1;
+    font-family: 'Barlow Semi Condensed';
+}
+.gymboree-hero-video .gymboree-button-default a:before, .gymboree-hero-image .gymboree-button-default a:before {
+    display: inline-block;
+    font-size: 2.5rem;
+    vertical-align: middle;
+    font-family: 'dashicons';
+    content: '\f522';
+}
+.gymboree-hero-image h1 {
+    font-size: 3.5rem;
+}
+.gymboree-hero-image .gymboree-button-default a {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+.gymboree-hero-image .gymboree-button-default a:before {
+    font-size: 2rem;
+}
+.gymboree-homepage-section {
+    background-color: #f9f9f9;
+    padding: 2rem 5%;
+    margin: 1rem 0;
+}
+.gymboree-homepage-title {
+    text-align: center;
+    color: #ef7421;
+}
+.gymboree-promotion-section {
+    border: 0.5rem solid #f1be48;
+    -moz-border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    border-radius: 1rem;
+}
+.gymboree-class-coming-soon:after {
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    font-style: italic;
+    vertical-align: super;
+    color: #ef7421;
+    content: 'Coming Soon';
+}
+.gymboree-card {
+    -moz-box-shadow: 0 5px 9px 0 #e0dfe0;
+    -webkit-box-shadow: 0 5px 9px 0 #e0dfe0;
+    -o-box-shadow: 0 5px 9px 0 #e0dfe0;
+    box-shadow: 0 5px 9px 0 #e0dfe0;
+    padding: 20px 30px;
+    margin: 0 auto 50px;
+}
+.gymboree-contact-us-section-card {
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+}
+.gymboree-contact-us-section-card .wp-block-columns {
+    margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+#float-gymboree {
+    width: 8rem;
+    margin-top: -4rem;
+}
+#float-gymboree .float-gymboree-label {
+    font-size: 1.4rem;
+}
+.entry-content .wp-block-cover {
+    min-height: 30vw;
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+    min-width: 20vw;
+}
+}
+@media screen and (min-width: 1200px) {
+#float-gymboree {
+    width: 10rem;
+    margin-top: -5rem;
+}
+#float-gymboree .float-gymboree-label {
+    font-size: 1.5rem;
+}
+.entry-content .wp-block-cover {
+    min-height: 25vw;
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+    min-width: 15vw;
+}
+}

@@ -1,0 +1,403 @@
+/*
+Theme Name: Gymboree
+Template: zakra
+Author: TWOUDIA
+Author URI: https://twoudia.com/
+Tags: one-column,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-logo,featured-images,footer-widgets,full-width-template,theme-options,threaded-comments,translation-ready,blog,news,e-commerce,rtl-language-support
+Version: 1.0.0.1568728499
+Updated: 2019-09-17 13:52:41
+*/
+
+/* General */
+.gymboree-padding-20px {
+	padding: 20px;
+}
+.gymboree-button-width-50 a {
+	min-width: 50%;
+}
+.gymboree-button-width-75 a {
+	min-width: 75%;
+}
+.gymboree-button-default a.wp-block-button__link, .gymboree-button-download a  {
+	text-decoration: none;
+	color: #EF7421;
+	border: 5px solid #EF7421;
+	background: #ffffff;
+}
+.gymboree-button-default a.wp-block-button__link:hover, .gymboree-button-download a:hover  {
+	color: #ffffff !important;
+	background: #EF7421;
+}
+.gymboree-button-default.active a.wp-block-button__link, .gymboree-button-download.active a  {
+	cursor: default;
+	color: #ffffff !important;
+	background: #EF7421;
+}
+.gymboree-button-default.reverse a.wp-block-button__link {
+	color: #ffffff;
+	border: 5px solid #ffffff;
+	background: #EF7421;
+}
+.gymboree-button-default.reverse a.wp-block-button__link:hover {
+	color: #EF7421 !important;
+	background: #ffffff;
+}
+.gymboree-button-default.reverse.active a.wp-block-button__link {
+	color: #EF7421 !important;
+	background: #ffffff;
+}
+.gymboree-button-download a {
+	border-radius: 28px;
+	cursor: pointer;
+	display: inline-block;
+	margin: 0;
+	padding: 12px 24px;
+	text-align: center;
+	text-decoration: none;
+	overflow-wrap: break-word;
+}
+
+
+input::-webkit-input-placeholder {
+	color: #EF7421;
+}
+input:-ms-input-placeholder {
+	color: #EF7421;
+}
+input::placeholder {
+	color: #EF7421;
+}
+.gymboree-center {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Header */
+.tg-container--separate .tg-site-header {
+	background-color: rgba(255,255,255,0.7) !important;
+}
+.site-branding {
+	max-width: 50%;
+}
+
+/* Primary Menu */
+.tg-primary-menu > div > ul > li {
+	margin: 1em 0.5em;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu {
+    border: none;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li {
+    background-color: rgba(243,221,109,0.5);
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li:hover {
+    background-color: rgba(239,116,33,0.5);
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li a {
+    padding: 0.5rem;
+}
+.tg-primary-menu > div > ul > li ul.sub-menu li:hover a {
+	color: #ffffff;
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+	min-width: 25vw;
+}
+@media screen and (min-width: 768px) {
+	.tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+    	min-width: 20vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .tg-primary-menu > div ul li.tg-menu-item-search .search-form {
+    	min-width: 15vw;
+  }
+}
+.tg-primary-menu > div ul li.tg-menu-item-search .search-form * {
+	color: #EF7421;
+	border-color: #EF7421;
+}
+.search-form label:before {
+	color: #EF7421;
+}
+
+/* Page Title */
+.tg-container--separate .tg-page-header {
+    background-color: #ef7421;
+}
+
+/* Content */
+.site-content {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#content .tg-container {
+	background-color: #ffffff;
+}
+.tg-site-layout--default .content-area {
+    margin: 0 auto;
+}
+.tg-site-layout--default .hentry {
+    margin: 0;
+}
+.hentry {
+    margin: 0;
+}
+.entry-content {
+    margin: 0;
+}
+.entry-content .alignfull {
+	margin-left : calc( -95vw / 2 + 100% / 2 );
+	margin-right : calc( -95vw / 2 + 100% / 2 );
+	width: 95vw;
+}
+.entry-content .wp-block-cover {
+	min-height: 430px;
+}
+@media screen and (min-width: 768px) {
+  .entry-content .wp-block-cover {
+    	min-height: 30vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .entry-content .wp-block-cover {
+    	min-height: 25vw;
+  }
+}
+#primary .post-thumbnail {
+	margin: 1rem auto 2rem;
+}
+.tg-container--separate #primary {
+    padding-right: 0;
+}
+.tg-container--separate #secondary {
+    padding-left: 0;
+}
+
+/* Footer */
+footer .frm_form_fields fieldset .frm_description h4 {
+	color: #ffffff;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+footer .frm_form_fields fieldset .frm_fields_container {
+	align-items: center;
+}
+footer .frm_form_fields fieldset .frm_fields_container label.frm_primary_label {
+	display: none;
+}
+footer .frm_form_fields fieldset .frm_fields_container .frm_error {
+	color: #ffffff;
+}
+footer .frm_form_fields fieldset .frm_fields_container .frm_submit::before {
+	display: none !important;
+	padding: 0px !important;
+}
+footer .widget {
+    margin: 0px;
+}
+
+/* Right Floating Gymboree (Link) */
+#float-gymboree {
+  	position: fixed;
+  	right: 0;
+  	top: 50%;
+  	width: 6rem;
+  	margin-top: -3rem;
+}
+#float-gymboree .float-gymboree-label {
+	font-family: 'Barlow Semi Condensed';
+	font-size: 1.2rem;
+	font-weight: bolder;
+	font-variant: small-caps;
+	text-align: center;
+	white-space: nowrap;
+	display: block;
+	color: #EF7421;
+	background-image: linear-gradient(92deg, #f35626, #feab3a);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  	animation: gymboree-text-hue 6s infinite linear;
+}
+@keyframes gymboree-text-hue {
+  from {
+    filter: hue-rotate(0deg);
+  }
+  to {
+    filter: hue-rotate(-360deg);
+  }
+}
+@media screen and (min-width: 768px) {
+	#float-gymboree {
+	  	width: 8rem;
+	  	margin-top: -4rem;
+	}
+	#float-gymboree .float-gymboree-label {
+		font-size: 1.4rem;
+	}
+}
+@media screen and (min-width: 1200px) {
+  	#float-gymboree {
+	  	width: 10rem;
+	  	margin-top: -5rem;
+	}
+	#float-gymboree .float-gymboree-label {
+		font-size: 1.5rem;
+	}
+}
+
+/* Widget: Calendar */
+#wp-calendar {
+	width: 100%;
+	max-width: 37.5rem;
+	background: #ccc;
+	margin-left: auto;
+	margin-right: auto;
+}
+#wp-calendar caption {
+	background: #EF7421;
+	color: #fff;
+	padding: 0.25rem;
+	text-align: center;
+}
+#wp-calendar thead tr {
+	border-right: 1px solid #ccc;
+}
+#wp-calendar thead th {
+	font-size: 90%;
+	font-weight: bold;
+	padding: 0.25rem;
+	background: #ccc;
+	text-transform: uppercase;
+	text-align: center;
+}
+#wp-calendar tbody td {
+	position: relative;
+	padding: 0.125rem;
+	text-align: center;
+	border: 1px solid #ccc;
+	background: #fff;
+}
+#wp-calendar tbody td.pad {
+	opacity: 0.7;
+}
+#wp-calendar tbody td#today {
+	font-weight: bold;
+}
+#wp-calendar tbody td#today:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-top: 10px solid #EF7421;
+	border-left: 10px solid transparent;
+}
+#wp-calendar tbody td a {
+	display: block;
+	background: rgba(232,146,124, 0.2);
+}
+#wp-calendar tbody td a:hover {
+	background: rgba(232,146,124, 1);
+	color: #fff;
+}
+#wp-calendar tfoot tr {
+	background: rgba(255, 255, 255, 0.7);
+	border: 1px solid #ccc;
+}
+#wp-calendar tfoot tr td {
+	border: 0;
+	padding: 0;
+}
+#wp-calendar tfoot tr a {
+	display: block;
+	padding: 0.25rem 0.75rem;
+}
+#wp-calendar tfoot tr a:hover {
+	background: #fff;
+}
+#wp-calendar tfoot tr #prev {
+	text-align: left;
+}
+#wp-calendar tfoot tr #next {
+	text-align: right;
+}
+
+/* Homepage */
+body.home #content {
+	margin-top: 0px;
+}
+body.home #content article.hentry {
+    padding-top: 0px;
+}
+body.home #content header.entry-header {
+    display: none;
+}
+.gymboree-hero-video h1 {
+	font-size: 4rem;
+}
+.gymboree-hero-video .gymboree-button-default a, .gymboree-hero-image .gymboree-button-default a {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	font-family: 'Barlow Semi Condensed';
+	font-size: 2rem;
+	line-height: 1.1;
+}
+.gymboree-hero-video .gymboree-button-default a:before, .gymboree-hero-image .gymboree-button-default a:before {
+	font-family: 'dashicons';
+	display: inline-block;
+	content: '\f522';
+	vertical-align: middle;
+	font-size: 2.5rem;
+}
+.gymboree-hero-image h1 {
+	font-size: 3.5rem;
+}
+.gymboree-hero-image .gymboree-button-default a {
+	font-size: 1.5rem;
+	line-height: 1.2;
+}
+.gymboree-hero-image .gymboree-button-default a:before {
+	font-size: 2rem;
+}
+.gymboree-homepage-section {
+	padding: 2rem 5%;
+    background-color: #F9F9F9;
+    margin: 1rem 0;
+}
+.gymboree-homepage-title {
+	text-align: center;
+	color: #EF7421;
+}
+.gymboree-promotion-section {
+	border: 0.5rem solid #F1BE48;
+	border-radius: 1rem;
+}
+
+
+/* Classes Related */
+.gymboree-class-coming-soon:after {
+	content: 'Coming Soon';
+	padding-left: 0.5rem;
+	vertical-align: super;
+	font-size: 1rem;
+	font-style: italic;
+	color: #ef7421;
+}
+
+/* Why Gymboree Cards Display */
+.gymboree-card {
+	margin: 0px auto 50px;
+	padding: 20px 30px;
+	box-shadow: 0 5px 9px 0 #E0DFE0;
+}
+
+/* Contact Us */
+.gymboree-contact-us-section-card {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 20px;
+}
+.gymboree-contact-us-section-card .wp-block-columns {
+	margin-bottom: 0px;
+}
