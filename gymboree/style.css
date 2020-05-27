@@ -4,11 +4,29 @@ Template: zakra
 Author: TWOUDIA
 Author URI: https://twoudia.com/
 Tags: one-column,two-columns,left-sidebar,right-sidebar,custom-background,custom-colors,custom-logo,featured-images,footer-widgets,full-width-template,theme-options,threaded-comments,translation-ready,blog,news,e-commerce,rtl-language-support
-Version: 1.0.0.1571536447
-Updated: 2019-10-20 11:54:07
-
+Version: 1.0.0.1571536522
+Updated: 2019-10-20 11:55:22
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+.section-homer-app {
+	border: 5px solid #057eae;
+	padding: 1rem;
+}
+.section-homer-app h2, .section-homer-app .wp-block-button a {
+	font-family: 'Montserrat', sans-serif;
+	text-decoration: none;
+}
+.section-homer-app .wp-block-button a.wp-block-button__link {
+	color: #057eae;
+	background-color: #ffffff;
+	border: 3px solid #057eae;
+	border-radius: 28px;
+}
+.section-homer-app .wp-block-button:hover a.wp-block-button__link {
+	color: #ffffff;
+	background-color: #057eae;
+}
 .tg-container--separate .tg-site-header {
     background-color: rgba(255,255,255,0.7) !important;
 }
@@ -24,9 +42,15 @@ Updated: 2019-10-20 11:54:07
 .tg-primary-menu > div ul li.tg-menu-item-search .search-form {
     min-width: 25vw;
 }
+.tg-primary-menu > div ul li.tg-menu-item-search .tg-icon {
+    font-size: 1.5rem;
+}
 .tg-primary-menu > div > ul > li {
     margin-left: 0.5em;
     margin-right: 0.5em;
+}
+.tg-primary-menu > div ul li.menu-item.gymboree-button-download a {
+	padding: 6px 12px;
 }
 .site-branding {
     max-width: 50%;
@@ -52,6 +76,9 @@ Updated: 2019-10-20 11:54:07
 }
 .gymboree-button-width-75 a {
     min-width: 75%;
+}
+.gymboree-button-default.homepage-video-button {
+	max-width: 275px;	
 }
 .gymboree-button-default a.wp-block-button__link, .gymboree-button-download a {
     border: 5px solid #ef7421;
@@ -142,6 +169,22 @@ input::placeholder {
 }
 #primary .post-thumbnail {
     margin: 1rem auto 2rem;
+}
+#frm_form_3_container .frm_submit {
+	justify-self: end;
+	grid-column: span 6 / span 6;
+}
+#frm_form_3_container .frm_submit button.frm_button_submit {
+	font-size: 1.5em;
+	background: #ffffff;
+	color: #ef7421;
+	border-width: 3px;
+    border-color: #ef7421;
+    border-style: solid;
+}
+#frm_form_3_container .frm_submit button.frm_button_submit:hover {
+	background: #ef7421;
+	color: #ffffff;
 }
 footer .frm_form_fields fieldset .frm_description h4 {
     margin-bottom: 0;
